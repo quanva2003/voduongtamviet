@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+:root {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Theme colors */
+  --primary-black: #000000;
+  --primary-red: #fd1610;
+  --primary-white: #ffffff;
+  --secondary-gray: #6b7280;
+  --light-gray: #f3f4f6;
+
+  color: var(--primary-black);
+  background-color: var(--primary-white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--primary-white);
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fd1610;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  border: 2px solid var(--primary-red);
+}
+
+.btn-primary:hover {
+  background-color: #d4140e;
+  border-color: #d4140e;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  /* background-color: transparent; */
+  color: var(--primary-red);
+  border: 2px solid var(--primary-red);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-red), #d4140e);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
