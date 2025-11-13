@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SEO from "../components/SEO";
+import { SEO_DATA } from "../constants/seo";
 
 const ArticlesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -117,8 +119,10 @@ const ArticlesPage: React.FC = () => {
       : articles.filter((article) => article.category === selectedCategory);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
+    <>
+      <SEO {...SEO_DATA.articles} />
+      <div className="min-h-screen">
+        {/* Hero Section */}
       <section className="relative h-96 bg-gradient-to-r from-[#FD1610] to-[#b0100c] flex items-center justify-center -mt-24 pt-24">
         <div className="text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -285,6 +289,7 @@ const ArticlesPage: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

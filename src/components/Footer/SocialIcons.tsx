@@ -9,7 +9,7 @@ const SocialIcons: React.FC = () => {
           key={social.name}
           href={social.url}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className="group relative transition-all duration-300"
           aria-label={social.name}
         >

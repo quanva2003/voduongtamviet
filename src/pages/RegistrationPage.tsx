@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SEO from "../components/SEO";
+import { SEO_DATA } from "../constants/seo";
 import HeroSection from "../components/RegistrationPage/HeroSection";
 import RegistrationForm from "../components/RegistrationPage/RegistrationForm";
 import LocationList from "../components/RegistrationPage/LocationList";
@@ -45,8 +47,10 @@ const RegistrationPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen">
-      <HeroSection />
+    <>
+      <SEO {...SEO_DATA.registration} />
+      <div className="min-h-screen">
+        <HeroSection />
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -77,6 +81,7 @@ const RegistrationPage: React.FC = () => {
         <CourseInfo />
       </div>
     </div>
+    </>
   );
 };
 
