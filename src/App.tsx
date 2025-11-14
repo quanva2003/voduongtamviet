@@ -7,7 +7,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import RegistrationPage from "./pages/RegistrationPage";
-import ArticlesPage from "./pages/ArticlesPage";
 
 function App() {
   useEffect(() => {
@@ -28,7 +27,6 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/registration" element={<RegistrationPage />} />
-            <Route path="/articles" element={<ArticlesPage />} />
           </Routes>
         </main>
         <Footer />

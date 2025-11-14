@@ -32,7 +32,6 @@ export const QUICK_LINKS: QuickLink[] = [
   { label: "Trang chủ", href: "/" },
   { label: "Giới thiệu", href: "/about" },
   { label: "Đăng ký học võ", href: "/registration" },
-  { label: "Bài viết", href: "/articles" },
 ];
 
 export const CONTACT_INFO: ContactInfo = {
