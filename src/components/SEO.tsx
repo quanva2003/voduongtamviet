@@ -5,6 +5,8 @@ export interface SEOProps {
   title: string;
   description: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   canonical?: string;
   keywords?: string;
   ogType?: string;
@@ -16,6 +18,8 @@ const SEO: React.FC<SEOProps> = ({
   title,
   description,
   image,
+  imageWidth = 1200,
+  imageHeight = 800,
   canonical,
   keywords,
   ogType = "website",
@@ -63,6 +67,8 @@ const SEO: React.FC<SEOProps> = ({
     updateMetaTag("og:title", title, "property");
     updateMetaTag("og:description", description, "property");
     updateMetaTag("og:image", ogImage, "property");
+    updateMetaTag("og:image:width", imageWidth.toString(), "property");
+    updateMetaTag("og:image:height", imageHeight.toString(), "property");
     updateMetaTag("og:url", currentUrl, "property");
     updateMetaTag("og:type", ogType, "property");
     updateMetaTag("og:site_name", "Võ Đường Tâm Việt", "property");
@@ -91,6 +97,8 @@ const SEO: React.FC<SEOProps> = ({
     title,
     description,
     image,
+    imageWidth,
+    imageHeight,
     canonical,
     keywords,
     ogType,
