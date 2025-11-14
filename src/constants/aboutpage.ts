@@ -37,7 +37,7 @@ export const HERO_SECTION = {
 export const MISSION_SECTION = {
   title: "Sứ mệnh của chúng tôi",
   paragraphs: [
-    "Võ đường Tâm Việt được thành lập với sứ mệnh truyền bá nghệ thuật karate truyền thống, không chỉ giúp học viên phát triển kỹ năng võ thuật mà còn rèn luyện tinh thần võ đạo, xây dựng nhân cách và phát triển toàn diện cả thể chất lẫn tinh thần.",
+    "Võ đường Tâm Việt được thành lập với sứ mệnh truyền bá nghệ thuật karate truyền thống, không chỉ giúp võ sinh phát triển kỹ năng võ thuật mà còn rèn luyện tinh thần võ đạo, xây dựng nhân cách và phát triển toàn diện cả thể chất lẫn tinh thần.",
     "Chúng tôi tin rằng karate là một môn thể thao toàn diện, giúp con người trở nên mạnh mẽ hơn, tự tin hơn và có khả năng vượt qua mọi thử thách trong cuộc sống.",
   ],
 };
@@ -52,13 +52,13 @@ export const JOURNEY: JourneyItem[] = [
     year: "2010",
     title: "Thành lập Võ đường Tâm Việt",
     description:
-      "Võ đường Tâm Việt được thành lập với sứ mệnh truyền bá nghệ thuật karate truyền thống và phát triển tinh thần võ đạo cho học viên Việt Nam.",
+      "Võ đường Tâm Việt được thành lập với sứ mệnh truyền bá nghệ thuật karate truyền thống và phát triển tinh thần võ đạo cho võ sinh Việt Nam.",
   },
   {
     year: "2012",
     title: "Mở rộng quy mô",
     description:
-      "Từ một lớp học nhỏ, Võ đường Tâm Việt đã mở rộng thành nhiều cơ sở tại Hà Nội, phục vụ hàng trăm học viên mỗi năm.",
+      "Từ một lớp học nhỏ, Võ đường Tâm Việt đã mở rộng thành nhiều cơ sở tại Hà Nội, phục vụ hàng trăm võ sinh mỗi năm.",
   },
   {
     year: "2015",
@@ -109,19 +109,19 @@ export const VALUES: Value[] = [
     icon: Handshake,
     title: "Tôn trọng và kỷ luật",
     description:
-      "Môi trường học tập tôn trọng, kỷ luật và thân thiện, giúp học viên phát triển toàn diện.",
+      "Môi trường học tập tôn trọng, kỷ luật và thân thiện, giúp võ sinh phát triển toàn diện.",
   },
   {
     icon: Star,
     title: "Phát triển cá nhân",
     description:
-      "Khuyến khích mỗi học viên phát triển theo khả năng riêng, không chỉ về kỹ thuật mà còn về tinh thần.",
+      "Khuyến khích mỗi võ sinh phát triển theo khả năng riêng, không chỉ về kỹ thuật mà còn về tinh thần.",
   },
   {
     icon: Trophy,
     title: "Thành tích xuất sắc",
     description:
-      "Nhiều học viên đã đạt được thành tích cao trong các giải đấu trong nước và quốc tế.",
+      "Nhiều võ sinh đã đạt được thành tích cao trong các giải đấu trong nước và quốc tế.",
   },
   {
     icon: Globe,
@@ -145,7 +145,7 @@ export const INSTRUCTORS: Instructor[] = [
     image:
       "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/480504748_604088995874841_8536188797157471300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KfSXf4hq6IIQ7kNvwHn8uHb&_nc_oc=AdmXz5hPfgBqhDE6w5M8wQ8gSusJsS1DORPmTRqpdXhkEptC6A6jc-cGAutSS5ueJfXpmZf8gXHIiQnlwvQeDZca&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Cu7O0ui_ktXwXjiFkkGTtQ&oh=00_AfheEN7P_zE0onEaT6PHJY1EY3aR71YtyQL16Ot4Ts3GEw&oe=691BDA41",
     description:
-      "Thầy Việt là người sáng lập Võ đường Tâm Việt, có hơn 20 năm kinh nghiệm trong việc giảng dạy karate và đã đào tạo hàng nghìn học viên.",
+      "Thầy Việt là người sáng lập Võ đường Tâm Việt, có hơn 20 năm kinh nghiệm trong việc giảng dạy karate và đã đào tạo hàng nghìn võ sinh.",
   },
   {
     name: "Cô Võ Thị Yến Nhi",
@@ -164,7 +164,7 @@ export const INSTRUCTORS: Instructor[] = [
     image:
       "https://api.dansolutions.vn/uploads/z7159599048036_6fc11701d3c0b4fafd5c552fd5630972_a8114634da.jpg",
     description:
-      "Thầy Anh Quân đã dẫn dắt nhiều học viên đạt thành tích cao trong các giải đấu.",
+      "Thầy Anh Quân đã dẫn dắt nhiều võ sinh đạt thành tích cao trong các giải đấu.",
   },
 ];
 

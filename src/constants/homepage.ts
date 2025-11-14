@@ -84,7 +84,7 @@ export const KARATE_INFO: KarateInfo[] = [
   {
     title: "Các đai trong Karate",
     content:
-      "Hệ thống đai trong karate bao gồm: Trắng (người mới), Vàng, Cam, Xanh lá, Xanh dương, Nâu, và Đen. Mỗi đai đại diện cho một cấp độ kỹ năng và hiểu biết khác nhau về môn võ.",
+      "Hệ thống đai trong karate bao gồm: Trắng (người mới), Vàng, Xanh lá, Xanh dương, Đỏ, Nâu, và Đen. Mỗi đai đại diện cho một cấp độ kỹ năng và hiểu biết khác nhau về môn võ.",
   },
 ];
 

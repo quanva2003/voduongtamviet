@@ -28,14 +28,18 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-500 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-lg"
           : "bg-white/90 backdrop-blur-lg"
       }`}
     >
       <div className="container">
-        <div className="flex justify-between items-center py-2 border-b border-gray-200 px-[16px] md:px-0">
+        <div className="flex justify-between items-center py-2 border-b border-gray-200 px-[16px] md:px-0 relative">
+          {/* Decorative gradient line on scroll */}
+          {isScrolled && (
+            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#FD1610]/30 to-transparent animate-fade-in-down"></div>
+          )}
           <div className="md:hidden w-10 h-10"></div>
           <Logo />
           <MenuButton isOpen={isMenuOpen} onClick={handleMenuToggle} />

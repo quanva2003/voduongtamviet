@@ -187,20 +187,23 @@ export const COURSE_INFO: CourseInfo[] = [
   {
     icon: DollarSign,
     title: "Học phí",
-    value: "1,500,000 VNĐ/tháng",
-    description: "Giảm 10% cho học viên mới",
+    value: "350.000 VNĐ/tháng",
+    description:
+      "Ưu đãi linh hoạt theo cấp độ — miễn phí hoàn toàn cho võ sinh có hoàn cảnh khó khăn. Cam kết minh bạch, không phụ phí.",
   },
   {
     icon: Users,
     title: "Sĩ số lớp",
-    value: "15-20 học viên/lớp",
-    description: "Đảm bảo chất lượng đào tạo",
+    value: "20–50 võ sinh/lớp",
+    description:
+      "Số lượng học viên phù hợp giúp giáo viên theo sát từng cá nhân, đảm bảo chất lượng huấn luyện và tiến bộ rõ rệt.",
   },
   {
     icon: Target,
     title: "Độ tuổi",
-    value: "5 tuổi trở lên",
-    description: "Có lớp riêng cho trẻ em",
+    value: "Từ 5 tuổi trở lên",
+    description:
+      "Có lớp riêng cho trẻ em, thanh thiếu niên và người lớn. Giáo trình điều chỉnh phù hợp với từng độ tuổi và thể trạng.",
   },
 ];
 

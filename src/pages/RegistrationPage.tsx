@@ -49,38 +49,44 @@ const RegistrationPage: React.FC = () => {
   return (
     <>
       <SEO {...SEO_DATA.registration} />
-      <div className="min-h-screen">
+      <div className="min-h-screen section-gradient-light relative overflow-hidden">
+        <div className="absolute inset-0 opacity-3">
+          <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#FD1610]/10 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#FD1610]/10 to-transparent rounded-full blur-3xl"></div>
+        </div>
         <HeroSection />
 
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <RegistrationForm
-            formData={formData}
-            onInputChange={handleInputChange}
-            onSubmit={handleSubmit}
-          />
+        <div className="container mx-auto px-4 py-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <RegistrationForm
+              formData={formData}
+              onInputChange={handleInputChange}
+              onSubmit={handleSubmit}
+            />
 
-          <div data-aos="fade-left">
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <h2 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                {LOCATIONS_TITLE}
-              </h2>
+            <div className="animate-fade-in-left">
+              <div className="bg-white p-8 rounded-2xl relative overflow-hidden group">
+                <div className="relative z-10">
+                  <h2 className="text-2xl font-bold mb-6 text-center gradient-text-secondary">
+                    {LOCATIONS_TITLE}
+                  </h2>
 
-              <LocationList
-                selectedLocation={selectedLocation}
-                onLocationSelect={handleLocationSelect}
-              />
+                  <LocationList
+                    selectedLocation={selectedLocation}
+                    onLocationSelect={handleLocationSelect}
+                  />
 
-              <LocationMap selectedLocation={selectedLocation} />
+                  <LocationMap selectedLocation={selectedLocation} />
 
-              <ContactInfo />
+                  <ContactInfo />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <CourseInfo />
+          <CourseInfo />
+        </div>
       </div>
-    </div>
     </>
   );
 };

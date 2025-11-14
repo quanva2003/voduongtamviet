@@ -39,15 +39,19 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       >
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-gradient-to-r from-[#FD1610] to-[#d4140e]">
-            <h2 className="text-xl font-bold text-white">Menu</h2>
+          <div className="flex items-center justify-between p-6 border-b border-gray-200 gradient-primary relative overflow-hidden">
+            <div className="absolute inset-0 opacity-20">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full blur-2xl"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white rounded-full blur-xl"></div>
+            </div>
+            <h2 className="text-xl font-bold text-white relative z-10 animate-fade-in-right">Menu</h2>
             <button
               onClick={onClose}
-              className="p-2 rounded-lg hover:bg-white/20 transition-colors duration-200"
+              className="p-2 rounded-lg hover:bg-white/20 transition-all duration-300 relative z-10 group hover:scale-110"
               aria-label="Close menu"
             >
               <svg
-                className="w-6 h-6 text-white"
+                className="w-6 h-6 text-white transition-transform duration-300 group-hover:rotate-90"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -69,24 +73,29 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`group flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-200 ${
+                  className={`group flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-300 relative overflow-hidden ${
                     location.pathname === item.href
-                      ? "bg-gradient-to-r from-[#FD1610] to-[#d4140e] text-white shadow-lg"
+                      ? "gradient-primary text-white shadow-lg"
                       : "text-gray-700 hover:bg-gray-100 hover:text-[#FD1610]"
                   }`}
                   onClick={onClose}
                   style={{
-                    animation: `slideInRight 0.3s ease-out ${
+                    animation: `slideInRight 0.4s ease-out ${
                       index * 0.1
                     }s both`,
                   }}
                 >
+                  {/* Hover gradient effect */}
+                  {location.pathname !== item.href && (
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#FD1610]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  )}
+                  
                   {item.icon && (
                     <div
-                      className={`flex-shrink-0 ${
+                      className={`flex-shrink-0 relative z-10 transition-all duration-300 ${
                         location.pathname === item.href
-                          ? "text-white"
-                          : "text-[#FD1610]"
+                          ? "text-white scale-110"
+                          : "text-[#FD1610] group-hover:scale-110 group-hover:rotate-12"
                       }`}
                     >
                       <svg
@@ -104,11 +113,16 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                       </svg>
                     </div>
                   )}
-                  <span className="font-semibold text-base uppercase tracking-wide">
+                  <span className="font-semibold text-base uppercase tracking-wide relative z-10">
                     {item.name}
                   </span>
                   {location.pathname === item.href && (
-                    <div className="ml-auto w-2 h-2 bg-white rounded-full"></div>
+                    <div className="ml-auto w-2 h-2 bg-white rounded-full animate-pulse-slow relative z-10"></div>
+                  )}
+                  
+                  {/* Active indicator line */}
+                  {location.pathname === item.href && (
+                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-white/50 rounded-r-full"></div>
                   )}
                 </Link>
               ))}
@@ -116,8 +130,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           </nav>
 
           {/* Footer */}
-          <div className="p-6 border-t border-gray-200 bg-gray-50">
-            <p className="text-sm text-gray-600 text-center">
+          <div className="p-6 border-t border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100">
+            <p className="text-sm text-gray-600 text-center font-medium">
               Võ đường Tâm Việt
             </p>
           </div>
@@ -128,12 +142,25 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         @keyframes slideInRight {
           from {
             opacity: 0;
-            transform: translateX(20px);
+            transform: translateX(30px);
           }
           to {
             opacity: 1;
             transform: translateX(0);
           }
+        }
+        @keyframes fadeInRight {
+          from {
+            opacity: 0;
+            transform: translateX(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        .animate-fade-in-right {
+          animation: fadeInRight 0.5s ease-out;
         }
       `}</style>
     </>
