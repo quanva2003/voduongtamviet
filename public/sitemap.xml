@@ -28,12 +28,4 @@
     <priority>0.9</priority>
   </url>
   
-  <!-- Trang bài viết -->
-  <url>
-    <loc>https://voduongtamviet.vercel.app/articles</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
 </urlset>
