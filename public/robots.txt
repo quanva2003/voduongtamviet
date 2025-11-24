@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://voduongtamviet.vercel.app/sitemap.xml
+
+# Disallow admin or private paths if any
+# Disallow: /admin
+# Disallow: /private
+
