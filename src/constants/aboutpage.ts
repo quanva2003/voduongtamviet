@@ -7,6 +7,9 @@ import {
   Globe,
   type LucideIcon,
 } from "lucide-react";
+import mrVietImage from "../assets/coach/mr-viet.jpg";
+import msNhiImage from "../assets/coach/ms-nhi.jpg";
+import mrQuanImage from "../assets/coach/mr-quan.jpg";
 
 export interface JourneyItem {
   year: string;
@@ -142,8 +145,7 @@ export const INSTRUCTORS: Instructor[] = [
     title: "Chủ nhiệm Võ đường",
     rank: "Đai đen 3 đẳng",
     experience: "> 20 năm kinh nghiệm",
-    image:
-      "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/480504748_604088995874841_8536188797157471300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KfSXf4hq6IIQ7kNvwHn8uHb&_nc_oc=AdmXz5hPfgBqhDE6w5M8wQ8gSusJsS1DORPmTRqpdXhkEptC6A6jc-cGAutSS5ueJfXpmZf8gXHIiQnlwvQeDZca&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Cu7O0ui_ktXwXjiFkkGTtQ&oh=00_AfheEN7P_zE0onEaT6PHJY1EY3aR71YtyQL16Ot4Ts3GEw&oe=691BDA41",
+    image: mrVietImage,
     description:
       "Thầy Việt là người sáng lập Võ đường Tâm Việt, có hơn 20 năm kinh nghiệm trong việc giảng dạy karate và đã đào tạo hàng nghìn võ sinh.",
   },
@@ -152,8 +154,7 @@ export const INSTRUCTORS: Instructor[] = [
     title: "Huấn luyện viên",
     rank: "Đai đen 2 đẳng",
     experience: "> 5 năm kinh nghiệm",
-    image:
-      "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/483958384_1835389317303777_1767438882633725512_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=tPNV19Sz1qoQ7kNvwHgnhXg&_nc_oc=Adny3I6ip93K_7TVez2xqEGmPDQ90UIPaaJKa_5xwHfnGhVqSvN_wNagEVa1tyK6G9Mtdz1KLXlQSc0dmXlvXvmK&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=I9PV9aX1uT4Hr5p9s33q_g&oh=00_AfjbMWHoRgOJEUvgvf2pIughZSdyDCyFs3Rh7iZfiGroJw&oe=691C06A8",
+    image: msNhiImage,
     description: "Cô Yến Nhi có phương pháp giảng dạy tận tình và hiệu quả.",
   },
   {
@@ -161,8 +162,7 @@ export const INSTRUCTORS: Instructor[] = [
     title: "Huấn luyện viên",
     rank: "Đai đen 1 đẳng",
     experience: "> 5 năm kinh nghiệm",
-    image:
-      "https://api.dansolutions.vn/uploads/z7159599048036_6fc11701d3c0b4fafd5c552fd5630972_a8114634da.jpg",
+    image: mrQuanImage,
     description:
       "Thầy Anh Quân đã dẫn dắt nhiều võ sinh đạt thành tích cao trong các giải đấu.",
   },
