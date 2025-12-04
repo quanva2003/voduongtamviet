@@ -72,13 +72,17 @@ const SEO: React.FC<SEOProps> = ({
     ) => {
       if (!content) return; // Skip empty content
 
-      let element = document.querySelector(`meta[${attribute}="${name}"]`);
-      if (!element) {
-        element = document.createElement("meta");
-        element.setAttribute(attribute, name);
-        document.head.appendChild(element);
-      }
+      // Remove all existing meta tags with same name/property to avoid duplicates
+      const existingTags = document.querySelectorAll(
+        `meta[${attribute}="${name}"]`
+      );
+      existingTags.forEach((tag) => tag.remove());
+
+      // Create new meta tag
+      const element = document.createElement("meta");
+      element.setAttribute(attribute, name);
       element.setAttribute("content", content);
+      document.head.appendChild(element);
     };
 
     // Basic meta tags
@@ -114,14 +118,16 @@ const SEO: React.FC<SEOProps> = ({
     updateMetaTag("twitter:description", description);
     updateMetaTag("twitter:image", ogImage);
 
-    // Canonical link
-    let canonicalLink = document.querySelector("link[rel='canonical']");
-    if (!canonicalLink) {
-      canonicalLink = document.createElement("link");
-      canonicalLink.setAttribute("rel", "canonical");
-      document.head.appendChild(canonicalLink);
-    }
+    // Canonical link - Remove old ones first
+    const existingCanonical = document.querySelectorAll(
+      "link[rel='canonical']"
+    );
+    existingCanonical.forEach((link) => link.remove());
+
+    const canonicalLink = document.createElement("link");
+    canonicalLink.setAttribute("rel", "canonical");
     canonicalLink.setAttribute("href", currentUrl);
+    document.head.appendChild(canonicalLink);
   }, [
     title,
     description,
