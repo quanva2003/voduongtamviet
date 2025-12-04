@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import RegistrationPage from "./pages/RegistrationPage";
+import BeltPromotionPage from "./pages/BeltPromotionPage";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,10 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/registration" element={<RegistrationPage />} />
+            <Route
+              path="/belt-promotion-iii-2025"
+              element={<BeltPromotionPage />}
+            />
           </Routes>
         </main>
         <Footer />
