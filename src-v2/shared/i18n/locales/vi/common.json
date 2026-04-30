@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "registration": "Đăng ký",
+    "articles": "Bài viết",
+    "schedule": "Lịch học",
+    "booking": "Đặt lịch"
+  },
+  "buttons": {
+    "submit": "Gửi",
+    "cancel": "Hủy",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "learnMore": "Tìm hiểu thêm",
+    "register": "Đăng ký ngay"
+  },
+  "errors": {
+    "generic": "Đã có lỗi xảy ra. Vui lòng thử lại.",
+    "notFound": "Không tìm thấy trang.",
+    "required": "Trường này là bắt buộc.",
+    "invalidEmail": "Email không hợp lệ.",
+    "invalidPhone": "Số điện thoại không hợp lệ."
+  },
+  "languages": {
+    "vi": "Tiếng Việt",
+    "en": "English",
+    "ja": "日本語"
+  }
+}

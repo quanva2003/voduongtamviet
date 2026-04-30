@@ -1,0 +1,6 @@
+dist
+dist-v2
+node_modules
+public
+*.lock
+*.log

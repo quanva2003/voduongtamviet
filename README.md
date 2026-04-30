@@ -1,3 +1,55 @@
+# Võ Đường Tâm Việt — Website
+
+## Working on v2
+
+The refactored codebase lives in `src-v2/` (Feature-Sliced Design, Tailwind 4, React 19).
+The original `src/` runs untouched on the same repo until Sprint 5 cutover.
+
+### Commands
+
+| Task | Command |
+|------|---------|
+| Dev server (v2) | `npm run dev:v2` → http://localhost:5174 |
+| Dev server (v1) | `npm run dev` → http://localhost:5173 |
+| Build v2 | `npm run build:v2` → `dist-v2/` |
+| Build v1 | `npm run build` → `dist/` |
+| Lint (v2) | `npm run lint` |
+| Typecheck (v2) | `npm run typecheck` |
+| Tests | `npm test` |
+| Tests watch | `npm run test:watch` |
+| Coverage | `npm run test:coverage` |
+
+### Architecture
+
+Layers (import direction: top → bottom only):
+
+```
+app → pages → widgets → features → entities → shared
+```
+
+See `docs/ARCHITECTURE.md` for the full FSD spec.
+
+### Commit convention
+
+Conventional Commits enforced by commitlint:
+
+```
+feat(header): add mobile hamburger animation
+fix(form): validate phone number before submit
+chore(deps): upgrade framer-motion to 12
+```
+
+### Vercel preview for `refactor/v2`
+
+The v2 branch needs its own Vercel project (separate from the v1 production project) configured in the dashboard:
+
+- **Build Command**: `npm run build:v2`
+- **Output Directory**: `dist-v2`
+- **Root Directory**: `.` (project root)
+- **Node Version**: 20
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

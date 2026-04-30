@@ -1,0 +1,25 @@
+/* Playfair Display — display headings, weights 400 + 400-italic */
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/400-italic.css";
+@import "@fontsource/playfair-display/500.css";
+
+/* Inter — body text, weights 400 + 500 */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+
+/* Noto Serif JP — kanji glyphs, variable font (covers wght axis) */
+@import "@fontsource-variable/noto-serif-jp";
+
+/* Enforce swap on all loaded faces to prevent FOIT */
+@font-face {
+  font-family: "Playfair Display";
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Serif JP";
+  font-display: swap;
+}

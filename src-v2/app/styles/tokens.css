@@ -1,0 +1,117 @@
+/* ===========================================================
+   Design System Tokens — Wabi-Sabi Cinematic
+   Pattern: hex values live in :root (light/dark). @theme inline
+   references them via var() so every Tailwind utility (bg-washi,
+   text-sumi-ink, …) resolves at runtime and respects dark-mode.
+   =========================================================== */
+
+/* ── Runtime CSS variables ─────────────────────────────────── */
+:root {
+  /* Colors — light */
+  --color-washi: #faf7f0;
+  --color-sumi-paper: #f0ead8;
+  --color-sumi-ink: #1a1815;
+  --color-shu-seal: #8b1a14;
+  --color-gold: #c9a961;
+  --color-text-primary: #2a2620;
+  --color-text-secondary: #6b6457;
+  --color-text-muted: #8a8275;
+  --color-border: #d4cdb8;
+  --color-border-strong: #a8a194;
+
+  /* Semantic */
+  --color-success: #5a7548;
+  --color-danger: #8b1a14;
+  --color-warning: #b8843d;
+  --color-info: #4a6478;
+
+  /* Border radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-48: 192px;
+
+  /* Containers */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-2xl: 1400px;
+
+  /* Type scale */
+  --text-display-xl: clamp(48px, 8vw, 96px);
+  --text-display-lg: clamp(36px, 5vw, 64px);
+  --text-display-md: clamp(28px, 3.5vw, 44px);
+  --text-h1: 32px;
+  --text-h2: 24px;
+  --text-h3: 20px;
+  --text-body-lg: 18px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-eyebrow: 11px;
+  --text-kanji-sm: 24px;
+  --text-kanji-md: 48px;
+  --text-kanji-xl: 96px;
+}
+
+/* ── Dark mode overrides ────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-washi: #1a1815;
+    --color-sumi-paper: #252220;
+    --color-sumi-ink: #faf7f0;
+    --color-shu-seal: #c43d36;
+    --color-gold: #d4b876;
+    --color-text-primary: #f0ead8;
+    --color-text-secondary: #a8a194;
+    --color-text-muted: #7a7368;
+    --color-border: #3a352e;
+    --color-border-strong: #5a5347;
+  }
+}
+
+/* ── Tailwind v4 theme ──────────────────────────────────────── */
+/* inline + var() reference = utility outputs var(--color-X),   */
+/* which the browser resolves at runtime from :root above.      */
+@theme inline {
+  /* Colors */
+  --color-washi: var(--color-washi);
+  --color-sumi-paper: var(--color-sumi-paper);
+  --color-sumi-ink: var(--color-sumi-ink);
+  --color-shu-seal: var(--color-shu-seal);
+  --color-gold: var(--color-gold);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-success: var(--color-success);
+  --color-danger: var(--color-danger);
+  --color-warning: var(--color-warning);
+  --color-info: var(--color-info);
+
+  /* Font families */
+  --font-display: "Playfair Display", "Lora", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-kanji: "Noto Serif JP", "Source Han Serif", serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Border radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}

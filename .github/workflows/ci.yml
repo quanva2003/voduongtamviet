@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "refactor/v2"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    name: Lint · Typecheck · Test · Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Lint (v2)
+        run: npm run lint
+
+      - name: Typecheck (v2)
+        run: npm run typecheck
+
+      - name: Test (v2)
+        run: npm test
+
+      - name: Build v1
+        run: npm run build
+
+      - name: Build v2
+        run: npm run build:v2

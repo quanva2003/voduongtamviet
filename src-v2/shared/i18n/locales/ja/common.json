@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "道場について",
+    "registration": "入門申込",
+    "articles": "記事",
+    "schedule": "稽古予定",
+    "booking": "予約"
+  },
+  "buttons": {
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "back": "戻る",
+    "next": "次へ",
+    "learnMore": "詳しく見る",
+    "register": "今すぐ入門"
+  },
+  "errors": {
+    "generic": "エラーが発生しました。もう一度お試しください。",
+    "notFound": "ページが見つかりません。",
+    "required": "この項目は必須です。",
+    "invalidEmail": "メールアドレスが無効です。",
+    "invalidPhone": "電話番号が無効です。"
+  },
+  "languages": {
+    "vi": "ベトナム語",
+    "en": "英語",
+    "ja": "日本語"
+  }
+}

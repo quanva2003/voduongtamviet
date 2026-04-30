@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "registration": "Registration",
+    "articles": "Articles",
+    "schedule": "Schedule",
+    "booking": "Booking"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "learnMore": "Learn more",
+    "register": "Register now"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Page not found.",
+    "required": "This field is required.",
+    "invalidEmail": "Invalid email address.",
+    "invalidPhone": "Invalid phone number."
+  },
+  "languages": {
+    "vi": "Tiếng Việt",
+    "en": "English",
+    "ja": "Japanese"
+  }
+}
