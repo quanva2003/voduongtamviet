@@ -6,6 +6,18 @@ import { expect, vi } from "vitest";
 expect.extend(jestDomMatchers);
 expect.extend(toHaveNoViolations);
 
+// jsdom does not implement IntersectionObserver — provide a minimal stub
+class IntersectionObserverMock {
+  observe = vi.fn();
+  unobserve = vi.fn();
+  disconnect = vi.fn();
+  takeRecords = vi.fn(() => []);
+}
+Object.defineProperty(window, "IntersectionObserver", {
+  writable: true,
+  configurable: true,
+  value: IntersectionObserverMock,
+});
 // jsdom does not implement matchMedia — provide a minimal stub
 Object.defineProperty(window, "matchMedia", {
   writable: true,
