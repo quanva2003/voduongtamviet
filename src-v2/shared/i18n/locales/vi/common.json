@@ -26,5 +26,107 @@
     "vi": "Tiếng Việt",
     "en": "English",
     "ja": "日本語"
+  },
+  "home": {
+    "title": "Võ Đường Tâm Việt — Học karate, sống kỷ luật",
+    "description": "Võ đường Karate hàng đầu tại TP.HCM với hơn 15 năm kinh nghiệm đào tạo. Rèn thân, luyện tâm, tinh thuật.",
+    "hero": {
+      "headline": "Võ thuật",
+      "headlineItalic": "không phải đích đến.",
+      "subline": "Tại Võ đường Tâm Việt, chúng tôi dạy karate như một con đường — rèn thân, luyện tâm, trui nghị lực.",
+      "cta": "Đăng ký học thử",
+      "ctaSecondary": "Tìm hiểu thêm"
+    },
+    "mission": {
+      "title": "Về Võ đường Tâm Việt",
+      "paragraphs": [
+        "Võ đường Tâm Việt được thành lập năm 2010 với sứ mệnh truyền dạy tinh hoa karate truyền thống đến thế hệ trẻ Việt Nam.",
+        "Chúng tôi tin rằng võ thuật không chỉ là kỹ năng tự vệ — đó là hành trình rèn luyện con người toàn diện về thể chất, tinh thần và đạo đức."
+      ]
+    },
+    "benefits": {
+      "eyebrow": "GIÁ TRỊ CỐT LÕI",
+      "title": "Ba giá trị nền tảng"
+    },
+    "instructors": {
+      "eyebrow": "HUẤN LUYỆN VIÊN",
+      "title": "Đội ngũ huấn luyện viên"
+    },
+    "articles": {
+      "eyebrow": "BÀI VIẾT",
+      "title": "Kiến thức võ thuật"
+    },
+    "cta": {
+      "headline": "Bắt đầu hành trình của bạn",
+      "paragraph": "Đăng ký lớp học thử miễn phí và khám phá con đường võ đạo tại Tâm Việt.",
+      "cta": "Đăng ký học thử"
+    }
+  },
+  "about": {
+    "title": "Giới thiệu — Võ Đường Tâm Việt",
+    "description": "Tìm hiểu về hành trình 15 năm xây dựng và phát triển Võ đường Tâm Việt — nơi karate gặp gỡ triết lý võ đạo.",
+    "hero": {
+      "headline": "Hành trình võ đạo của chúng tôi",
+      "subline": "15 năm tận tụy đào tạo và truyền cảm hứng cho hàng nghìn võ sinh."
+    },
+    "mission": {
+      "eyebrow": "SỨ MỆNH",
+      "title": "Sứ mệnh của chúng tôi",
+      "paragraphs": [
+        "Võ đường Tâm Việt được xây dựng trên nền tảng ba giá trị: Tâm (tinh thần), Thân (thể chất) và Thuật (kỹ thuật). Chúng tôi không chỉ dạy karate — chúng tôi đào tạo con người.",
+        "Với hơn 15 năm hoạt động, chúng tôi tự hào đã góp phần vào sự phát triển của phong trào karate Việt Nam và truyền cảm hứng cho hàng nghìn võ sinh."
+      ]
+    },
+    "journey": {
+      "eyebrow": "HÀNH TRÌNH",
+      "title": "15 năm phát triển",
+      "items": [
+        {
+          "year": "2010",
+          "title": "Thành lập Võ đường",
+          "description": "Thầy Nguyễn Văn Việt thành lập Võ đường Tâm Việt với 20 học viên đầu tiên tại Thủ Đức, TP.HCM."
+        },
+        {
+          "year": "2013",
+          "title": "Huy chương quốc gia đầu tiên",
+          "description": "Võ sinh đầu tiên của Tâm Việt giành huy chương tại Giải Karate Toàn quốc, khẳng định chất lượng đào tạo."
+        },
+        {
+          "year": "2016",
+          "title": "Mở rộng cơ sở",
+          "description": "Khai trương cơ sở thứ hai, đáp ứng nhu cầu ngày càng tăng của cộng đồng võ sinh."
+        },
+        {
+          "year": "2020",
+          "title": "1.000 võ sinh đai đen",
+          "description": "Cột mốc 1.000 võ sinh đạt đai đen dưới sự đào tạo của Võ đường Tâm Việt."
+        },
+        {
+          "year": "2024",
+          "title": "Chứng nhận WKF",
+          "description": "Được Liên đoàn Karate Thế giới công nhận là trung tâm đào tạo đạt chuẩn quốc tế."
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "VÕ ĐẠO",
+      "title": "Triết lý võ đạo"
+    },
+    "instructors": {
+      "eyebrow": "ĐỘI NGŨ",
+      "title": "Huấn luyện viên của chúng tôi"
+    },
+    "cta": {
+      "headline": "Sẵn sàng bắt đầu?",
+      "paragraph": "Tham gia cộng đồng Tâm Việt và bắt đầu hành trình võ đạo của bạn ngay hôm nay.",
+      "cta": "Đăng ký ngay"
+    }
+  },
+  "notFound": {
+    "title": "404 — Không tìm thấy trang",
+    "description": "Trang bạn tìm kiếm không tồn tại.",
+    "subline": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
+    "goHome": "Về trang chủ",
+    "contact": "Liên hệ"
   }
 }

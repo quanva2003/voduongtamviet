@@ -26,5 +26,107 @@
     "vi": "Tiếng Việt",
     "en": "English",
     "ja": "Japanese"
+  },
+  "home": {
+    "title": "[EN] Tam Viet Dojo — Learn karate, live with discipline",
+    "description": "[EN] Premier karate dojo in Ho Chi Minh City with over 15 years of experience. Train body, forge spirit, master technique.",
+    "hero": {
+      "headline": "[EN] Martial arts is",
+      "headlineItalic": "[EN] not a destination.",
+      "subline": "[EN] At Tam Viet Dojo, we teach karate as a path — training the body, forging the mind, building resilience.",
+      "cta": "[EN] Register for a trial",
+      "ctaSecondary": "[EN] Learn more"
+    },
+    "mission": {
+      "title": "[EN] About Tam Viet Dojo",
+      "paragraphs": [
+        "[EN] Tam Viet Dojo was founded in 2010 with the mission to pass on the essence of traditional karate to the next generation.",
+        "[EN] We believe martial arts is not just self-defence — it is a journey of holistic development encompassing the physical, mental, and ethical dimensions of a person."
+      ]
+    },
+    "benefits": {
+      "eyebrow": "[EN] CORE VALUES",
+      "title": "[EN] Three foundational values"
+    },
+    "instructors": {
+      "eyebrow": "[EN] INSTRUCTORS",
+      "title": "[EN] Our instructor team"
+    },
+    "articles": {
+      "eyebrow": "[EN] ARTICLES",
+      "title": "[EN] Martial arts knowledge"
+    },
+    "cta": {
+      "headline": "[EN] Begin your journey",
+      "paragraph": "[EN] Register for a free trial class and discover the path of martial arts at Tam Viet.",
+      "cta": "[EN] Register for a trial"
+    }
+  },
+  "about": {
+    "title": "[EN] About — Tam Viet Dojo",
+    "description": "[EN] Discover the 15-year journey of building and developing Tam Viet Dojo — where karate meets martial philosophy.",
+    "hero": {
+      "headline": "[EN] Our martial arts journey",
+      "subline": "[EN] 15 years dedicated to training and inspiring thousands of practitioners."
+    },
+    "mission": {
+      "eyebrow": "[EN] MISSION",
+      "title": "[EN] Our mission",
+      "paragraphs": [
+        "[EN] Tam Viet Dojo is built on three values: Shin (spirit), Tai (body), and Waza (technique). We do not just teach karate — we develop people.",
+        "[EN] With over 15 years of activity, we are proud to have contributed to the growth of the karate movement in Vietnam and inspired thousands of students."
+      ]
+    },
+    "journey": {
+      "eyebrow": "[EN] JOURNEY",
+      "title": "[EN] 15 years of growth",
+      "items": [
+        {
+          "year": "2010",
+          "title": "[EN] Dojo founded",
+          "description": "[EN] Master Nguyen Van Viet founded Tam Viet Dojo with 20 founding students in Thu Duc, Ho Chi Minh City."
+        },
+        {
+          "year": "2013",
+          "title": "[EN] First national medal",
+          "description": "[EN] The first Tam Viet student won a medal at the National Karate Championship, confirming the quality of training."
+        },
+        {
+          "year": "2016",
+          "title": "[EN] Expansion",
+          "description": "[EN] A second training location was opened to meet the growing needs of the student community."
+        },
+        {
+          "year": "2020",
+          "title": "[EN] 1,000 black belt students",
+          "description": "[EN] The milestone of 1,000 students achieving black belt under Tam Viet Dojo's training programme."
+        },
+        {
+          "year": "2024",
+          "title": "[EN] WKF certification",
+          "description": "[EN] Recognised by the World Karate Federation as an internationally accredited training centre."
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "[EN] MARTIAL WAY",
+      "title": "[EN] Martial philosophy"
+    },
+    "instructors": {
+      "eyebrow": "[EN] TEAM",
+      "title": "[EN] Our instructors"
+    },
+    "cta": {
+      "headline": "[EN] Ready to begin?",
+      "paragraph": "[EN] Join the Tam Viet community and start your martial arts journey today.",
+      "cta": "[EN] Register now"
+    }
+  },
+  "notFound": {
+    "title": "[EN] 404 — Page not found",
+    "description": "[EN] The page you are looking for does not exist.",
+    "subline": "[EN] The page you are looking for does not exist or has been moved.",
+    "goHome": "[EN] Back to home",
+    "contact": "[EN] Contact us"
   }
 }
