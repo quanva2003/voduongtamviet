@@ -140,7 +140,7 @@ function GridView({
                 key={day}
                 className="border border-border bg-sumi-paper px-3 py-2 text-center font-medium text-text-secondary"
               >
-                {DAY_LABELS[day]}
+                {DAY_LABELS[day] ?? day}
               </th>
             ))}
           </tr>
@@ -150,7 +150,7 @@ function GridView({
             {DAYS_ORDER.map((day) => (
               <td key={day} className="border border-border px-2 py-2 align-top">
                 <div className="flex flex-col gap-2">
-                  {byDay[day].map((s) => (
+                  {(byDay[day] ?? []).map((s) => (
                     <div key={s.id} className="rounded-[var(--radius-sm)] bg-sumi-paper p-2">
                       <p className="font-medium text-text-primary">
                         {s.startTime}–{s.endTime}

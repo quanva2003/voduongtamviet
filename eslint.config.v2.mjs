@@ -115,6 +115,10 @@ export default defineConfig([
         },
       ],
 
+      // noUncheckedIndexedAccess + no-non-null-assertion conflict; TypeScript
+      // already enforces safety, so `!` is acceptable in this codebase.
+      "@typescript-eslint/no-non-null-assertion": "off",
+
       // Block reaching into a slice's internals — only index.ts is public API
       "no-restricted-imports": [
         "error",

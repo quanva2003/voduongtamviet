@@ -27,13 +27,12 @@ import {
   VisuallyHidden,
   ZenBlock,
 } from "@/shared/ui";
-import { CtaSection } from "@/widgets/cta-section";
-import { ArticlesGrid } from "@/widgets/articles-grid";
 import { ArticleContent } from "@/widgets/article-content";
+import { ArticlesGrid } from "@/widgets/articles-grid";
 import { BenefitsGrid } from "@/widgets/benefits-grid";
-import { ScheduleTable } from "@/widgets/schedule-table";
 import { BookingSummaryWidget } from "@/widgets/booking-summary";
 import { CourseInfo, courseInfoData } from "@/widgets/course-info";
+import { CtaSection } from "@/widgets/cta-section";
 import { HeroCinematic } from "@/widgets/hero-cinematic";
 import { HeroZen } from "@/widgets/hero-zen";
 import { InstructorProfile } from "@/widgets/instructor-profile";
@@ -41,6 +40,7 @@ import { InstructorsList } from "@/widgets/instructors-list";
 import { JourneyTimeline } from "@/widgets/journey-timeline";
 import { LocationsMap } from "@/widgets/locations-map";
 import { MissionStatement } from "@/widgets/mission-statement";
+import { ScheduleTable } from "@/widgets/schedule-table";
 import { SiteFooter } from "@/widgets/site-footer";
 import { SiteHeader } from "@/widgets/site-header";
 import { ValuesGrid } from "@/widgets/values-grid";
@@ -350,7 +350,7 @@ function WidgetsTab() {
 
       {/* Instructor Profile */}
       <div className="border-t border-border">
-        <InstructorProfile instructor={instructors.vi[0]} />
+        <InstructorProfile instructor={instructors.vi[0]!} />
       </div>
 
       {/* Locations Map */}
@@ -389,12 +389,12 @@ function WidgetsTab() {
 
       {/* Article Content */}
       <div className="border-t border-border">
-        <ArticleContent article={articles.vi[0]} categoryLabel="Kỹ thuật" />
+        <ArticleContent article={articles.vi[0]!} categoryLabel="Kỹ thuật" />
       </div>
 
       {/* Booking Summary Widget */}
       <BookingSummaryWidget
-        schedule={classSchedules[0]}
+        schedule={classSchedules[0]!}
         bookingDraft={{
           studentName: "Nguyễn Văn An",
           studentEmail: "an@example.com",
@@ -402,8 +402,8 @@ function WidgetsTab() {
           studentAge: 10,
           sessionDate: "2024-03-15",
         }}
-        locationName={LOCATION_NAMES[classSchedules[0].locationId]}
-        instructorName={INSTRUCTOR_NAMES[classSchedules[0].instructorId]}
+        locationName={LOCATION_NAMES[classSchedules[0]!.locationId] ?? ""}
+        instructorName={INSTRUCTOR_NAMES[classSchedules[0]!.instructorId] ?? ""}
         editHrefs={{ schedule: "/booking/schedule", student: "/booking/student" }}
       />
 

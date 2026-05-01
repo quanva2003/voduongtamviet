@@ -5,7 +5,7 @@ import { articles } from "@/entities/article";
 
 import { ArticleContent } from "./ui/article-content";
 
-const article = articles.vi[0];
+const article = articles.vi[0]!;
 
 describe("ArticleContent", () => {
   it("renders article title", () => {

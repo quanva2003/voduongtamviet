@@ -5,7 +5,7 @@ import { classSchedules } from "@/entities/class-schedule";
 
 import { BookingSummaryWidget } from "./ui/booking-summary";
 
-const schedule = classSchedules[0];
+const schedule = classSchedules[0]!;
 const draft = {
   studentName: "Nguyễn Văn An",
   studentEmail: "an@example.com",

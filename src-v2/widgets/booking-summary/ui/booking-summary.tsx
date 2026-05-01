@@ -44,7 +44,7 @@ export function BookingSummaryWidget({
             <SectionHeader label="Thông tin lớp học" editHref={editHrefs?.schedule} />
             <dl className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               <Row label="Địa điểm" value={locationName} />
-              <Row label="Thứ" value={DAY_LABELS[schedule.dayOfWeek]} />
+              <Row label="Thứ" value={DAY_LABELS[schedule.dayOfWeek] ?? schedule.dayOfWeek} />
               <Row label="Giờ học" value={`${schedule.startTime}–${schedule.endTime}`} />
               <Row label="Huấn luyện viên" value={instructorName} />
               {bookingDraft.sessionDate && (

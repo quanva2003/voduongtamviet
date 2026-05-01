@@ -15,8 +15,8 @@ describe("LocationsMap", () => {
 
   it("selecting a location updates the map iframe title", async () => {
     render(<LocationsMap locations={locations.vi} />);
-    const second = locations.vi[1];
-    await userEvent.click(screen.getAllByRole("button")[1]);
+    const second = locations.vi[1]!;
+    await userEvent.click(screen.getAllByRole("button")[1]!);
     expect(screen.getByTitle(new RegExp(second.name))).toBeInTheDocument();
   });
 });

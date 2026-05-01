@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { locations } from "./model/data";
 import { LocationCard } from "./ui/location-card";
 
-const location = locations.vi[0];
+const location = locations.vi[0]!;
 
 describe("LocationCard", () => {
   it("renders location name and address", () => {

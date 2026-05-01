@@ -5,7 +5,7 @@ import { articles } from "./model/data";
 import { ArticleCard } from "./ui/article-card";
 import { ArticleMetaRow } from "./ui/article-meta-row";
 
-const article = articles.vi[0];
+const article = articles.vi[0]!;
 
 const wrap = (ui: React.ReactElement) => render(<MemoryRouter>{ui}</MemoryRouter>);
 

@@ -5,7 +5,7 @@ import { instructors } from "@/entities/instructor";
 
 import { InstructorProfile } from "./ui/instructor-profile";
 
-const instructor = instructors.vi[0];
+const instructor = instructors.vi[0]!;
 
 describe("InstructorProfile", () => {
   it("renders instructor name", () => {

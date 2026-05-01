@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { values } from "./model/data";
 import { ValueCard } from "./ui/value-card";
 
-const value = values.vi[0];
+const value = values.vi[0]!;
 
 describe("ValueCard", () => {
   it("renders kanji, title and description", () => {

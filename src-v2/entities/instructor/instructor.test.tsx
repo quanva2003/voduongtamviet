@@ -5,7 +5,7 @@ import { instructors } from "./model/data";
 import { InstructorAvatar } from "./ui/instructor-avatar";
 import { InstructorCard } from "./ui/instructor-card";
 
-const instructor = instructors.vi[0];
+const instructor = instructors.vi[0]!;
 
 const wrap = (ui: React.ReactElement) => render(<MemoryRouter>{ui}</MemoryRouter>);
 

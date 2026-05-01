@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { classSchedules } from "./model/data";
 import { ScheduleRow } from "./ui/schedule-row";
 
-const schedule = classSchedules[0];
+const schedule = classSchedules[0]!;
 
 describe("ScheduleRow", () => {
   it("renders day, time range, and instructor", () => {

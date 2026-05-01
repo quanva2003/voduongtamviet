@@ -10,7 +10,7 @@ const wrap = (ui: React.ReactElement) => render(<MemoryRouter>{ui}</MemoryRouter
 describe("ArticlesGrid", () => {
   it("renders articles", () => {
     wrap(<ArticlesGrid articles={articles.vi.slice(0, 3)} />);
-    expect(screen.getByText(articles.vi[0].title)).toBeInTheDocument();
+    expect(screen.getByText(articles.vi[0]!.title)).toBeInTheDocument();
   });
 
   it("renders empty state when no articles", () => {

@@ -13,7 +13,10 @@ interface BookingSummaryProps {
 }
 
 export function BookingSummary({ booking }: BookingSummaryProps) {
-  const status = STATUS_LABELS[booking.status];
+  const status = STATUS_LABELS[booking.status] ?? {
+    label: booking.status,
+    color: "text-text-secondary",
+  };
   const formatted = new Date(booking.sessionDate).toLocaleDateString("vi-VN", {
     weekday: "long",
     day: "2-digit",

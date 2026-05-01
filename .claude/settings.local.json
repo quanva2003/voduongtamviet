@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm uninstall *)",
+      "Bash(npx husky *)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npx commitlint *)",
+      "Bash(npx eslint *)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\);try{const c=JSON.parse\\(d\\);console.log\\('rules with boundaries:',Object.keys\\(c.rules\\).filter\\(k=>k.includes\\('bound'\\)\\)\\)}catch\\(e\\){console.log\\(d.slice\\(0,500\\)\\)}\")",
+      "Bash(python -c \"import sys,json; d=sys.stdin.read\\(\\); c=json.loads\\(d\\); print\\([k for k in c['rules'] if 'bound' in k]\\)\")",
+      "Bash(python -c \"import sys,json; d=sys.stdin.read\\(\\); c=json.loads\\(d\\); print\\(json.dumps\\(c['rules']['boundaries/element-types'], indent=2\\)\\)\")",
+      "Bash(python -c \"import sys,json; d=sys.stdin.read\\(\\); c=json.loads\\(d\\); print\\(json.dumps\\(c.get\\('settings',{}\\), indent=2\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('version:', d.get\\('version'\\)\\); print\\('main:', d.get\\('main'\\)\\); print\\('exports:', list\\(d.get\\('exports',{}\\).keys\\(\\)\\)[:5]\\)\")",
+      "Bash(ESLINT_PLUGIN_BOUNDARIES_DEBUG=1 npx eslint --config eslint.config.v2.mjs src-v2/shared/ui/_boundary-test.ts)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('version:', d['version']\\); print\\('main:', d.get\\('main',''\\)[:80]\\)\")",
+      "Bash(node -e \"const rtl = require\\('@testing-library/react'\\); console.log\\(Object.keys\\(rtl\\).includes\\('screen'\\)\\)\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}

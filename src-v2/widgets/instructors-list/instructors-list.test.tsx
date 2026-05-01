@@ -22,7 +22,7 @@ describe("InstructorsList", () => {
       id: `${inst.id}-${i}`,
       slug: `${inst.slug}-${i}`,
     }));
-    const five = [...many, { ...many[0], id: "extra-4", slug: "extra-4" }];
+    const five = [...many, { ...many[0]!, id: "extra-4", slug: "extra-4" }];
     wrap(<InstructorsList instructors={five} variant="preview" />);
     expect(screen.getAllByRole("link", { name: /xem chi tiết/i })).toHaveLength(4);
   });
