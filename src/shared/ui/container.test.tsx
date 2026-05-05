@@ -9,19 +9,19 @@ describe("Container", () => {
     expect(screen.getByText("Inner")).toBeInTheDocument();
   });
 
-  it("applies default md max-width", () => {
+  it("applies default md max-width via inline style", () => {
     const { container } = render(<Container>X</Container>);
-    expect(container.firstChild).toHaveClass("max-w-[var(--container-md)]");
+    expect(container.firstChild).toHaveStyle({ maxWidth: "768px" });
   });
 
-  it("applies xl max-width", () => {
+  it("applies xl max-width via inline style", () => {
     const { container } = render(<Container size="xl">X</Container>);
-    expect(container.firstChild).toHaveClass("max-w-[var(--container-xl)]");
+    expect(container.firstChild).toHaveStyle({ maxWidth: "1200px" });
   });
 
-  it("applies 2xl max-width", () => {
+  it("applies 2xl max-width via inline style", () => {
     const { container } = render(<Container size="2xl">X</Container>);
-    expect(container.firstChild).toHaveClass("max-w-[var(--container-2xl)]");
+    expect(container.firstChild).toHaveStyle({ maxWidth: "1400px" });
   });
 
   it("is centered with mx-auto", () => {
