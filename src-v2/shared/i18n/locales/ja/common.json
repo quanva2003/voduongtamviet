@@ -29,7 +29,7 @@
   },
   "home": {
     "title": "[JA] タムヴィエット道場 — 空手を学び、規律とともに生きる",
-    "description": "[JA] ホーチミン市の一流空手道場。15年以上の指導経験を持つ。心・体・技を鍛える。",
+    "description": "[JA] ホーチミン市の一流空手道場。15年以上の指導経験。心・体・技を鍛える。",
     "hero": {
       "headline": "[JA] 武道とは",
       "headlineItalic": "[JA] 目的地ではない。",
@@ -40,41 +40,32 @@
     "mission": {
       "title": "[JA] タムヴィエット道場について",
       "paragraphs": [
-        "[JA] タムヴィエット道場は2010年、伝統空手の精髄を次世代のベトナムの若者に伝えるという使命のもと設立されました。",
-        "[JA] 武道とは単なる護身術ではなく、心身と倫理観を総合的に鍛える人間修養の道であると私たちは信じています。"
+        "[JA] タムヴィエット道場は2010年に設立されました。",
+        "[JA] 武道とは単なる護身術ではなく、心身を総合的に鍛える人間修養の道です。"
       ]
     },
-    "benefits": {
-      "eyebrow": "[JA] 核心的価値",
-      "title": "[JA] 三つの根本的価値"
-    },
-    "instructors": {
-      "eyebrow": "[JA] 指導員",
-      "title": "[JA] 指導員チーム"
-    },
-    "articles": {
-      "eyebrow": "[JA] 記事",
-      "title": "[JA] 武道の知識"
-    },
+    "benefits": { "eyebrow": "[JA] 核心的価値", "title": "[JA] 三つの根本的価値" },
+    "instructors": { "eyebrow": "[JA] 指導員", "title": "[JA] 指導員チーム" },
+    "articles": { "eyebrow": "[JA] 記事", "title": "[JA] 武道の知識" },
     "cta": {
       "headline": "[JA] あなたの道を始めよう",
-      "paragraph": "[JA] 無料体験クラスに申し込んで、タムヴィエットで武道の道を見つけよう。",
+      "paragraph": "[JA] 無料体験クラスに申し込んでください。",
       "cta": "[JA] 無料体験に申し込む"
     }
   },
   "about": {
     "title": "[JA] 道場について — タムヴィエット道場",
-    "description": "[JA] タムヴィエット道場の15年にわたる歩みをご紹介します。空手と武道哲学が出会う場所。",
+    "description": "[JA] タムヴィエット道場の15年にわたる歩みをご紹介します。",
     "hero": {
       "headline": "[JA] 私たちの武道の旅",
-      "subline": "[JA] 15年間、何千人もの門下生を育て、インスピレーションを与え続けてきました。"
+      "subline": "[JA] 15年間、何千人もの門下生を育ててきました。"
     },
     "mission": {
       "eyebrow": "[JA] 使命",
       "title": "[JA] 私たちの使命",
       "paragraphs": [
-        "[JA] タムヴィエット道場は、心・体・技の三つの価値の上に築かれています。私たちは空手を教えるだけでなく、人を育てます。",
-        "[JA] 15年以上の活動を通じて、ベトナムの空手運動の発展に貢献し、何千人もの門下生に夢を与えてきたことを誇りに思います。"
+        "[JA] タムヴィエット道場は、心・体・技の三つの価値の上に築かれています。",
+        "[JA] 15年以上の活動を通じて、ベトナムの空手運動の発展に貢献しました。"
       ]
     },
     "journey": {
@@ -84,49 +75,244 @@
         {
           "year": "2010",
           "title": "[JA] 道場設立",
-          "description": "[JA] グエン・ヴァン・ヴィエット師範が、ホーチミン市トゥードックで20名の初期門下生とともにタムヴィエット道場を設立。"
+          "description": "[JA] グエン・ヴァン・ヴィエット師範が道場を設立。"
         },
         {
           "year": "2013",
           "title": "[JA] 初の全国大会メダル",
-          "description": "[JA] タムヴィエット初の門下生が全国空手大会でメダルを獲得し、指導の質を証明した。"
+          "description": "[JA] 初の門下生が全国大会でメダルを獲得。"
         },
-        {
-          "year": "2016",
-          "title": "[JA] 施設の拡大",
-          "description": "[JA] 増加する門下生のニーズに応えるため、第2の道場を開設。"
-        },
+        { "year": "2016", "title": "[JA] 施設の拡大", "description": "[JA] 第2の道場を開設。" },
         {
           "year": "2020",
           "title": "[JA] 黒帯1,000名",
-          "description": "[JA] タムヴィエット道場の指導のもと、黒帯取得者1,000名という節目を達成。"
+          "description": "[JA] 黒帯取得者1,000名を達成。"
         },
         {
           "year": "2024",
           "title": "[JA] WKF認定",
-          "description": "[JA] 世界空手連盟より国際認定トレーニングセンターとして認証を取得。"
+          "description": "[JA] 世界空手連盟より認定を取得。"
         }
       ]
     },
-    "values": {
-      "eyebrow": "[JA] 武道",
-      "title": "[JA] 武道哲学"
-    },
-    "instructors": {
-      "eyebrow": "[JA] チーム",
-      "title": "[JA] 指導員紹介"
-    },
+    "values": { "eyebrow": "[JA] 武道", "title": "[JA] 武道哲学" },
+    "instructors": { "eyebrow": "[JA] チーム", "title": "[JA] 指導員紹介" },
     "cta": {
       "headline": "[JA] 始める準備はできましたか？",
-      "paragraph": "[JA] タムヴィエットのコミュニティに加わり、今日から武道の旅を始めましょう。",
+      "paragraph": "[JA] タムヴィエットで武道の旅を始めましょう。",
       "cta": "[JA] 今すぐ入門"
     }
   },
   "notFound": {
     "title": "[JA] 404 — ページが見つかりません",
     "description": "[JA] お探しのページは存在しません。",
-    "subline": "[JA] お探しのページは存在しないか、移動された可能性があります。",
+    "subline": "[JA] お探しのページは存在しないか、移動されました。",
     "goHome": "[JA] ホームへ戻る",
     "contact": "[JA] お問い合わせ"
+  },
+  "registration": {
+    "title": "[JA] 入門申込 — タムヴィエット道場",
+    "description": "[JA] タムヴィエット道場の空手クラスに申し込む。体験レッスンは無料です。",
+    "hero": {
+      "headline": "[JA] 道を歩み始めよう",
+      "subline": "[JA] フォームにご記入ください。体験稽古の日程をご連絡します。"
+    },
+    "cta": {
+      "headline": "[JA] ご質問はありますか？",
+      "paragraph": "[JA] 直接ご連絡いただくか、最寄りの道場へお越しください。",
+      "cta": "[JA] 稽古予定を見る"
+    },
+    "form": {
+      "ariaLabel": "[JA] 入門申込フォーム",
+      "name": "[JA] 氏名",
+      "email": "[JA] メールアドレス",
+      "phone": "[JA] 電話番号",
+      "age": "[JA] 年齢",
+      "experience": "[JA] 武道経験",
+      "experiencePlaceholder": "[JA] 経験を選択",
+      "experienceOptions": {
+        "none": "[JA] 未経験",
+        "beginner": "[JA] 初級（1年未満）",
+        "intermediate": "[JA] 中級（1〜3年）",
+        "advanced": "[JA] 上級（3年以上）"
+      },
+      "location": "[JA] 希望道場",
+      "locationPlaceholder": "[JA] 道場を選択",
+      "message": "[JA] メモ（任意）",
+      "messagePlaceholder": "[JA] 目標、都合の良い時間、ご質問など...",
+      "consent": "[JA] タムヴィエット道場が提供した情報で連絡することに同意します。",
+      "submit": "[JA] 申込を送信",
+      "success": {
+        "headline": "[JA] 申込を受け付けました！",
+        "body": "[JA] 体験稽古の確認のためすぐにご連絡します。",
+        "again": "[JA] もう一件申し込む"
+      },
+      "errors": {
+        "nameMin": "[JA] 名前は2文字以上必要です",
+        "nameMax": "[JA] 名前は80文字以内にしてください",
+        "emailInvalid": "[JA] メールアドレスが無効です",
+        "phoneInvalid": "[JA] 電話番号が無効です",
+        "ageRequired": "[JA] 年齢を入力してください",
+        "ageMin": "[JA] 最低年齢は5歳です",
+        "ageMax": "[JA] 最高年齢は80歳です",
+        "experienceRequired": "[JA] 経験を選択してください",
+        "locationRequired": "[JA] 道場を選択してください",
+        "messageMax": "[JA] メモは500文字以内にしてください",
+        "consentRequired": "[JA] 規約に同意してください"
+      }
+    }
+  },
+  "articles": {
+    "title": "[JA] 記事 — タムヴィエット道場",
+    "description": "[JA] タムヴィエット道場の武道知識、哲学、ニュースを探索する。",
+    "hero": { "headline": "[JA] 紙から学ぶ" },
+    "cta": {
+      "headline": "[JA] 実際に稽古してみませんか？",
+      "paragraph": "[JA] 無料体験レッスンに申し込む。",
+      "cta": "[JA] 今すぐ入門"
+    },
+    "filter": {
+      "categories": "[JA] カテゴリ",
+      "searchLabel": "[JA] 記事を検索",
+      "searchPlaceholder": "[JA] 検索...",
+      "emptyTitle": "[JA] 記事が見つかりません",
+      "emptyBody": "[JA] キーワードを変えるか、別のカテゴリを選んでください。",
+      "reset": "[JA] すべて表示"
+    }
+  },
+  "articleDetail": {
+    "related": "[JA] 関連記事",
+    "cta": {
+      "headline": "[JA] 稽古を始めませんか？",
+      "paragraph": "[JA] 読んだことを実践に活かしましょう。",
+      "cta": "[JA] 体験申込"
+    }
+  },
+  "instructorDetail": {
+    "classes": "[JA] 指導スケジュール",
+    "cta": {
+      "headline": "[JA] この指導員と稽古する",
+      "paragraph": "[JA] 今すぐ予約して、一緒に道を歩もう。",
+      "cta": "[JA] 稽古を予約"
+    }
+  },
+  "beltPromotion": {
+    "title": "[JA] 昇段審査 — タムヴィエット道場",
+    "description": "[JA] タムヴィエット道場の昇段審査の詳細。",
+    "hero": { "eyebrow": "[JA] 昇段審査" },
+    "detail": {
+      "date": "[JA] 審査日",
+      "location": "[JA] 会場",
+      "fee": "[JA] 費用",
+      "deadline": "[JA] 申込締切",
+      "requirements": "[JA] 参加要件",
+      "register": "[JA] 審査に申し込む"
+    },
+    "cta": {
+      "headline": "[JA] 万全の準備を",
+      "paragraph": "[JA] 継続的に稽古し、すべての練習に参加してください。",
+      "cta": "[JA] 稽古予定を見る"
+    }
+  },
+  "schedule": {
+    "title": "[JA] 稽古予定 — タムヴィエット道場",
+    "description": "[JA] タムヴィエット道場の空手クラスの予定を確認し、今すぐ予約する。",
+    "hero": { "headline": "[JA] あなたの稽古週間" },
+    "filter": {
+      "location": "[JA] 道場",
+      "allLocations": "[JA] すべての道場",
+      "ageGroup": "[JA] 年齢グループ",
+      "allAgeGroups": "[JA] すべての年齢",
+      "level": "[JA] レベル",
+      "allLevels": "[JA] すべてのレベル"
+    },
+    "ageGroup": {
+      "kids": "[JA] 子供",
+      "teens": "[JA] 中高生",
+      "adults": "[JA] 大人",
+      "all": "[JA] すべて"
+    },
+    "level": {
+      "beginner": "[JA] 初級",
+      "intermediate": "[JA] 中級",
+      "advanced": "[JA] 上級",
+      "all": "[JA] すべて"
+    },
+    "cta": {
+      "headline": "[JA] クラスは見つかりましたか？",
+      "paragraph": "[JA] 今すぐ予約して無料体験レッスンを確保しましょう。",
+      "cta": "[JA] 稽古を予約"
+    }
+  },
+  "booking": {
+    "title": "[JA] 稽古を予約",
+    "confirm": "[JA] 予約を確定",
+    "confirming": "[JA] 処理中...",
+    "steps": {
+      "selectClass": "[JA] クラスを選ぶ",
+      "selectDate": "[JA] 日程を選ぶ",
+      "contactInfo": "[JA] 連絡先",
+      "review": "[JA] 確認"
+    },
+    "progress": { "label": "[JA] 予約の進捗" },
+    "ageGroup": {
+      "kids": "[JA] 子供",
+      "teens": "[JA] 中高生",
+      "adults": "[JA] 大人",
+      "all": "[JA] すべて"
+    },
+    "level": {
+      "beginner": "[JA] 初級",
+      "intermediate": "[JA] 中級",
+      "advanced": "[JA] 上級",
+      "all": "[JA] すべて"
+    },
+    "contact": {
+      "studentName": "[JA] 門下生氏名",
+      "studentAge": "[JA] 年齢",
+      "studentPhone": "[JA] 電話番号",
+      "studentEmail": "[JA] メールアドレス",
+      "parentName": "[JA] 保護者氏名",
+      "parentPhone": "[JA] 保護者電話番号",
+      "notes": "[JA] メモ",
+      "notesPlaceholder": "[JA] 特別なご要望、ご質問など..."
+    },
+    "review": {
+      "classInfo": "[JA] クラス情報",
+      "studentInfo": "[JA] 門下生情報",
+      "location": "[JA] 道場",
+      "day": "[JA] 稽古日",
+      "instructor": "[JA] 指導員",
+      "date": "[JA] 体験日",
+      "changeDate": "[JA] 日程を変更",
+      "edit": "[JA] 編集",
+      "fee": "[JA] 月謝",
+      "feeNote": "[JA] 初回体験は完全無料です。"
+    },
+    "confirmation": {
+      "headline": "[JA] 予約完了！",
+      "body": "[JA] 体験予約を受け付けました。確認のためすぐにご連絡します。",
+      "idLabel": "[JA] 予約ID",
+      "saveId": "[JA] このIDを保存して予約を確認してください。",
+      "myBookings": "[JA] 予約一覧",
+      "home": "[JA] ホームへ戻る"
+    },
+    "myBookings": {
+      "title": "[JA] 予約一覧",
+      "empty": "[JA] まだ予約がありません。",
+      "confirmed": "[JA] 確定済み",
+      "cancelled": "[JA] キャンセル済み",
+      "cancel": "[JA] キャンセル"
+    },
+    "errors": {
+      "nameMin": "[JA] 名前は2文字以上必要です",
+      "nameMax": "[JA] 名前は80文字以内",
+      "ageRequired": "[JA] 年齢を入力してください",
+      "ageMin": "[JA] 最低年齢は5歳",
+      "ageMax": "[JA] 最高年齢は80歳",
+      "phoneInvalid": "[JA] 電話番号が無効です",
+      "emailInvalid": "[JA] メールアドレスが無効です",
+      "parentRequired": "[JA] 18歳未満は保護者の氏名が必要です"
+    }
   }
 }

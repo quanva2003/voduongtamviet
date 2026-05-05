@@ -89,17 +89,17 @@
         {
           "year": "2013",
           "title": "[EN] First national medal",
-          "description": "[EN] The first Tam Viet student won a medal at the National Karate Championship, confirming the quality of training."
+          "description": "[EN] The first Tam Viet student won a medal at the National Karate Championship."
         },
         {
           "year": "2016",
           "title": "[EN] Expansion",
-          "description": "[EN] A second training location was opened to meet the growing needs of the student community."
+          "description": "[EN] A second training location was opened."
         },
         {
           "year": "2020",
           "title": "[EN] 1,000 black belt students",
-          "description": "[EN] The milestone of 1,000 students achieving black belt under Tam Viet Dojo's training programme."
+          "description": "[EN] The milestone of 1,000 students achieving black belt."
         },
         {
           "year": "2024",
@@ -108,14 +108,8 @@
         }
       ]
     },
-    "values": {
-      "eyebrow": "[EN] MARTIAL WAY",
-      "title": "[EN] Martial philosophy"
-    },
-    "instructors": {
-      "eyebrow": "[EN] TEAM",
-      "title": "[EN] Our instructors"
-    },
+    "values": { "eyebrow": "[EN] MARTIAL WAY", "title": "[EN] Martial philosophy" },
+    "instructors": { "eyebrow": "[EN] TEAM", "title": "[EN] Our instructors" },
     "cta": {
       "headline": "[EN] Ready to begin?",
       "paragraph": "[EN] Join the Tam Viet community and start your martial arts journey today.",
@@ -128,5 +122,210 @@
     "subline": "[EN] The page you are looking for does not exist or has been moved.",
     "goHome": "[EN] Back to home",
     "contact": "[EN] Contact us"
+  },
+  "registration": {
+    "title": "[EN] Register — Tam Viet Dojo",
+    "description": "[EN] Register for a karate class at Tam Viet Dojo. Your first session is completely free.",
+    "hero": {
+      "headline": "[EN] Begin your journey",
+      "subline": "[EN] Fill in the form and we will contact you to arrange a trial session."
+    },
+    "cta": {
+      "headline": "[EN] Have questions?",
+      "paragraph": "[EN] Contact us directly or visit the nearest location.",
+      "cta": "[EN] View schedule"
+    },
+    "form": {
+      "ariaLabel": "[EN] Registration form",
+      "name": "[EN] Full name",
+      "email": "[EN] Email",
+      "phone": "[EN] Phone number",
+      "age": "[EN] Age",
+      "experience": "[EN] Martial arts experience",
+      "experiencePlaceholder": "[EN] Select experience",
+      "experienceOptions": {
+        "none": "[EN] No experience",
+        "beginner": "[EN] Beginner (< 1 year)",
+        "intermediate": "[EN] Intermediate (1–3 years)",
+        "advanced": "[EN] Advanced (> 3 years)"
+      },
+      "location": "[EN] Preferred location",
+      "locationPlaceholder": "[EN] Select location",
+      "message": "[EN] Notes (optional)",
+      "messagePlaceholder": "[EN] Goals, availability, questions...",
+      "consent": "[EN] I agree to be contacted by Tam Viet Dojo using the information provided.",
+      "submit": "[EN] Submit registration",
+      "success": {
+        "headline": "[EN] Registration received!",
+        "body": "[EN] We will contact you soon to confirm and arrange your trial session.",
+        "again": "[EN] Register another"
+      },
+      "errors": {
+        "nameMin": "[EN] Name must be at least 2 characters",
+        "nameMax": "[EN] Name must not exceed 80 characters",
+        "emailInvalid": "[EN] Invalid email address",
+        "phoneInvalid": "[EN] Invalid phone number (e.g. 0912345678)",
+        "ageRequired": "[EN] Please enter age",
+        "ageMin": "[EN] Minimum age is 5",
+        "ageMax": "[EN] Maximum age is 80",
+        "experienceRequired": "[EN] Please select experience",
+        "locationRequired": "[EN] Please select a location",
+        "messageMax": "[EN] Notes must not exceed 500 characters",
+        "consentRequired": "[EN] You must agree to the terms"
+      }
+    }
+  },
+  "articles": {
+    "title": "[EN] Articles — Tam Viet Dojo",
+    "description": "[EN] Explore martial arts knowledge, philosophy, and news from Tam Viet Dojo.",
+    "hero": { "headline": "[EN] Learn from the page" },
+    "cta": {
+      "headline": "[EN] Ready for real practice?",
+      "paragraph": "[EN] Register for a free trial session.",
+      "cta": "[EN] Register now"
+    },
+    "filter": {
+      "categories": "[EN] Article categories",
+      "searchLabel": "[EN] Search articles",
+      "searchPlaceholder": "[EN] Search...",
+      "emptyTitle": "[EN] No articles found",
+      "emptyBody": "[EN] Try changing the keyword or selecting a different category.",
+      "reset": "[EN] View all"
+    }
+  },
+  "articleDetail": {
+    "related": "[EN] Related articles",
+    "cta": {
+      "headline": "[EN] Ready to train?",
+      "paragraph": "[EN] Put what you've read into practice at Tam Viet Dojo.",
+      "cta": "[EN] Register for a trial"
+    }
+  },
+  "instructorDetail": {
+    "classes": "[EN] Teaching schedule",
+    "cta": {
+      "headline": "[EN] Train with this instructor",
+      "paragraph": "[EN] Book a session and start your journey together.",
+      "cta": "[EN] Book a class"
+    }
+  },
+  "beltPromotion": {
+    "title": "[EN] Belt Grading — Tam Viet Dojo",
+    "description": "[EN] Details about the belt grading examination at Tam Viet Dojo.",
+    "hero": { "eyebrow": "[EN] BELT GRADING" },
+    "detail": {
+      "date": "[EN] Exam date",
+      "location": "[EN] Venue",
+      "fee": "[EN] Fee",
+      "deadline": "[EN] Registration deadline",
+      "requirements": "[EN] Requirements",
+      "register": "[EN] Register for exam"
+    },
+    "cta": {
+      "headline": "[EN] Prepare your best",
+      "paragraph": "[EN] Train consistently and attend all sessions for the best results.",
+      "cta": "[EN] View schedule"
+    }
+  },
+  "schedule": {
+    "title": "[EN] Schedule — Tam Viet Dojo",
+    "description": "[EN] View the karate class schedule at Tam Viet Dojo locations and book your spot.",
+    "hero": { "headline": "[EN] Your training week" },
+    "filter": {
+      "location": "[EN] Location",
+      "allLocations": "[EN] All locations",
+      "ageGroup": "[EN] Age group",
+      "allAgeGroups": "[EN] All age groups",
+      "level": "[EN] Level",
+      "allLevels": "[EN] All levels"
+    },
+    "ageGroup": {
+      "kids": "[EN] Children",
+      "teens": "[EN] Teenagers",
+      "adults": "[EN] Adults",
+      "all": "[EN] All"
+    },
+    "level": {
+      "beginner": "[EN] Beginner",
+      "intermediate": "[EN] Intermediate",
+      "advanced": "[EN] Advanced",
+      "all": "[EN] All"
+    },
+    "cta": {
+      "headline": "[EN] Found the right class?",
+      "paragraph": "[EN] Book now to secure your free trial session.",
+      "cta": "[EN] Book a class"
+    }
+  },
+  "booking": {
+    "title": "[EN] Book a class",
+    "confirm": "[EN] Confirm booking",
+    "confirming": "[EN] Processing...",
+    "steps": {
+      "selectClass": "[EN] Select class",
+      "selectDate": "[EN] Select date",
+      "contactInfo": "[EN] Your info",
+      "review": "[EN] Review"
+    },
+    "progress": { "label": "[EN] Booking progress" },
+    "ageGroup": {
+      "kids": "[EN] Children",
+      "teens": "[EN] Teenagers",
+      "adults": "[EN] Adults",
+      "all": "[EN] All"
+    },
+    "level": {
+      "beginner": "[EN] Beginner",
+      "intermediate": "[EN] Intermediate",
+      "advanced": "[EN] Advanced",
+      "all": "[EN] All"
+    },
+    "contact": {
+      "studentName": "[EN] Student full name",
+      "studentAge": "[EN] Age",
+      "studentPhone": "[EN] Phone",
+      "studentEmail": "[EN] Email",
+      "parentName": "[EN] Parent/guardian name",
+      "parentPhone": "[EN] Parent/guardian phone",
+      "notes": "[EN] Notes",
+      "notesPlaceholder": "[EN] Special requirements, questions..."
+    },
+    "review": {
+      "classInfo": "[EN] Class information",
+      "studentInfo": "[EN] Student information",
+      "location": "[EN] Location",
+      "day": "[EN] Session",
+      "instructor": "[EN] Instructor",
+      "date": "[EN] Trial date",
+      "changeDate": "[EN] Change date",
+      "edit": "[EN] Edit",
+      "fee": "[EN] Fee",
+      "feeNote": "[EN] Your first session is completely free."
+    },
+    "confirmation": {
+      "headline": "[EN] Booking confirmed!",
+      "body": "[EN] We have received your trial booking and will contact you to confirm shortly.",
+      "idLabel": "[EN] Booking ID",
+      "saveId": "[EN] Save this ID to look up your booking.",
+      "myBookings": "[EN] My bookings",
+      "home": "[EN] Back to home"
+    },
+    "myBookings": {
+      "title": "[EN] My bookings",
+      "empty": "[EN] You have no bookings yet.",
+      "confirmed": "[EN] Confirmed",
+      "cancelled": "[EN] Cancelled",
+      "cancel": "[EN] Cancel"
+    },
+    "errors": {
+      "nameMin": "[EN] Name must be at least 2 characters",
+      "nameMax": "[EN] Name must not exceed 80 characters",
+      "ageRequired": "[EN] Please enter age",
+      "ageMin": "[EN] Minimum age is 5",
+      "ageMax": "[EN] Maximum age is 80",
+      "phoneInvalid": "[EN] Invalid phone number",
+      "emailInvalid": "[EN] Invalid email address",
+      "parentRequired": "[EN] Parent name is required for students under 18"
+    }
   }
 }

@@ -128,5 +128,218 @@
     "subline": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
     "goHome": "Về trang chủ",
     "contact": "Liên hệ"
+  },
+  "registration": {
+    "title": "Đăng ký học — Võ Đường Tâm Việt",
+    "description": "Đăng ký tham gia khóa học karate tại Võ đường Tâm Việt. Buổi đầu tiên hoàn toàn miễn phí.",
+    "hero": {
+      "headline": "Bắt đầu hành trình",
+      "subline": "Điền thông tin bên dưới và chúng tôi sẽ liên hệ để sắp xếp buổi học thử."
+    },
+    "cta": {
+      "headline": "Còn thắc mắc?",
+      "paragraph": "Liên hệ trực tiếp với chúng tôi qua hotline hoặc ghé thăm cơ sở gần nhất.",
+      "cta": "Xem lịch học"
+    },
+    "form": {
+      "ariaLabel": "Biểu mẫu đăng ký học",
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "age": "Tuổi",
+      "experience": "Kinh nghiệm võ thuật",
+      "experiencePlaceholder": "Chọn kinh nghiệm",
+      "experienceOptions": {
+        "none": "Chưa học võ",
+        "beginner": "Mới bắt đầu (< 1 năm)",
+        "intermediate": "Trung cấp (1–3 năm)",
+        "advanced": "Nâng cao (> 3 năm)"
+      },
+      "location": "Cơ sở muốn học",
+      "locationPlaceholder": "Chọn cơ sở",
+      "message": "Ghi chú (tùy chọn)",
+      "messagePlaceholder": "Mục tiêu, thời gian rảnh, câu hỏi...",
+      "consent": "Tôi đồng ý để Võ đường Tâm Việt liên hệ theo thông tin đã cung cấp.",
+      "submit": "Gửi đăng ký",
+      "success": {
+        "headline": "Đã nhận thông tin!",
+        "body": "Chúng tôi sẽ liên hệ sớm để xác nhận và sắp xếp buổi học thử.",
+        "again": "Đăng ký thêm"
+      },
+      "errors": {
+        "nameMin": "Tên phải có ít nhất 2 ký tự",
+        "nameMax": "Tên không được quá 80 ký tự",
+        "emailInvalid": "Email không hợp lệ",
+        "phoneInvalid": "Số điện thoại không hợp lệ (VD: 0912345678)",
+        "ageRequired": "Vui lòng nhập tuổi",
+        "ageMin": "Tuổi tối thiểu là 5",
+        "ageMax": "Tuổi tối đa là 80",
+        "experienceRequired": "Vui lòng chọn kinh nghiệm",
+        "locationRequired": "Vui lòng chọn cơ sở",
+        "messageMax": "Ghi chú không được quá 500 ký tự",
+        "consentRequired": "Bạn phải đồng ý với điều khoản"
+      }
+    }
+  },
+  "articles": {
+    "title": "Bài viết — Võ Đường Tâm Việt",
+    "description": "Khám phá kiến thức võ thuật, triết lý võ đạo và tin tức từ Võ đường Tâm Việt.",
+    "hero": {
+      "headline": "Học từ trang giấy"
+    },
+    "cta": {
+      "headline": "Muốn trải nghiệm thực tế?",
+      "paragraph": "Đăng ký buổi học thử miễn phí và cảm nhận sự khác biệt của Tâm Việt.",
+      "cta": "Đăng ký ngay"
+    },
+    "filter": {
+      "categories": "Danh mục bài viết",
+      "searchLabel": "Tìm kiếm bài viết",
+      "searchPlaceholder": "Tìm kiếm...",
+      "emptyTitle": "Không có bài viết phù hợp",
+      "emptyBody": "Thử thay đổi từ khóa hoặc chọn danh mục khác.",
+      "reset": "Xem tất cả"
+    }
+  },
+  "articleDetail": {
+    "related": "Bài viết liên quan",
+    "cta": {
+      "headline": "Sẵn sàng luyện tập?",
+      "paragraph": "Áp dụng những gì bạn đọc vào thực tế tại Võ đường Tâm Việt.",
+      "cta": "Đăng ký học thử"
+    }
+  },
+  "instructorDetail": {
+    "classes": "Lịch dạy",
+    "cta": {
+      "headline": "Học với huấn luyện viên này",
+      "paragraph": "Đặt lịch ngay để bắt đầu hành trình cùng huấn luyện viên.",
+      "cta": "Đặt lịch học"
+    }
+  },
+  "beltPromotion": {
+    "title": "Kỳ thi cấp đai — Võ Đường Tâm Việt",
+    "description": "Thông tin chi tiết về kỳ thi cấp đai tại Võ đường Tâm Việt.",
+    "hero": {
+      "eyebrow": "THI CẤP ĐAI"
+    },
+    "detail": {
+      "date": "Ngày thi",
+      "location": "Địa điểm",
+      "fee": "Lệ phí",
+      "deadline": "Hạn đăng ký",
+      "requirements": "Điều kiện tham dự",
+      "register": "Đăng ký dự thi"
+    },
+    "cta": {
+      "headline": "Chuẩn bị tốt nhất cho kỳ thi",
+      "paragraph": "Luyện tập chăm chỉ và tham gia đầy đủ các buổi tập để đạt kết quả tốt nhất.",
+      "cta": "Xem lịch học"
+    }
+  },
+  "schedule": {
+    "title": "Lịch học — Võ Đường Tâm Việt",
+    "description": "Xem lịch học karate tại các cơ sở Võ đường Tâm Việt và đặt lịch học ngay.",
+    "hero": {
+      "headline": "Tuần học của bạn"
+    },
+    "filter": {
+      "location": "Cơ sở",
+      "allLocations": "Tất cả cơ sở",
+      "ageGroup": "Độ tuổi",
+      "allAgeGroups": "Tất cả độ tuổi",
+      "level": "Trình độ",
+      "allLevels": "Tất cả trình độ"
+    },
+    "ageGroup": {
+      "kids": "Thiếu nhi",
+      "teens": "Thiếu niên",
+      "adults": "Người lớn",
+      "all": "Tất cả"
+    },
+    "level": {
+      "beginner": "Mới bắt đầu",
+      "intermediate": "Trung cấp",
+      "advanced": "Nâng cao",
+      "all": "Tất cả"
+    },
+    "cta": {
+      "headline": "Đã chọn được lớp học?",
+      "paragraph": "Đặt lịch ngay để giữ chỗ cho buổi học thử miễn phí.",
+      "cta": "Đặt lịch học"
+    }
+  },
+  "booking": {
+    "title": "Đặt lịch học",
+    "confirm": "Xác nhận đặt lịch",
+    "confirming": "Đang xử lý...",
+    "steps": {
+      "selectClass": "Chọn lớp",
+      "selectDate": "Chọn ngày",
+      "contactInfo": "Thông tin",
+      "review": "Xác nhận"
+    },
+    "progress": {
+      "label": "Tiến trình đặt lịch"
+    },
+    "ageGroup": {
+      "kids": "Thiếu nhi",
+      "teens": "Thiếu niên",
+      "adults": "Người lớn",
+      "all": "Tất cả"
+    },
+    "level": {
+      "beginner": "Mới bắt đầu",
+      "intermediate": "Trung cấp",
+      "advanced": "Nâng cao",
+      "all": "Tất cả"
+    },
+    "contact": {
+      "studentName": "Họ và tên học viên",
+      "studentAge": "Tuổi",
+      "studentPhone": "Số điện thoại",
+      "studentEmail": "Email",
+      "parentName": "Họ và tên phụ huynh",
+      "parentPhone": "Điện thoại phụ huynh",
+      "notes": "Ghi chú",
+      "notesPlaceholder": "Yêu cầu đặc biệt, câu hỏi..."
+    },
+    "review": {
+      "classInfo": "Thông tin lớp học",
+      "studentInfo": "Thông tin học viên",
+      "location": "Cơ sở",
+      "day": "Buổi học",
+      "instructor": "Huấn luyện viên",
+      "date": "Ngày học thử",
+      "changeDate": "Đổi ngày",
+      "edit": "Chỉnh sửa",
+      "fee": "Học phí",
+      "feeNote": "Buổi đầu tiên hoàn toàn miễn phí."
+    },
+    "confirmation": {
+      "headline": "Đặt lịch thành công!",
+      "body": "Chúng tôi đã nhận lịch học thử của bạn và sẽ liên hệ xác nhận sớm.",
+      "idLabel": "Mã đặt lịch",
+      "saveId": "Lưu mã này để tra cứu lịch hẹn của bạn.",
+      "myBookings": "Lịch của tôi",
+      "home": "Về trang chủ"
+    },
+    "myBookings": {
+      "title": "Lịch học của tôi",
+      "empty": "Bạn chưa có lịch học nào.",
+      "confirmed": "Đã xác nhận",
+      "cancelled": "Đã hủy",
+      "cancel": "Hủy lịch"
+    },
+    "errors": {
+      "nameMin": "Tên phải có ít nhất 2 ký tự",
+      "nameMax": "Tên không được quá 80 ký tự",
+      "ageRequired": "Vui lòng nhập tuổi",
+      "ageMin": "Tuổi tối thiểu là 5",
+      "ageMax": "Tuổi tối đa là 80",
+      "phoneInvalid": "Số điện thoại không hợp lệ",
+      "emailInvalid": "Email không hợp lệ",
+      "parentRequired": "Vui lòng nhập tên phụ huynh (học viên dưới 18 tuổi)"
+    }
   }
 }

@@ -33,7 +33,8 @@
       "@/widgets/*":  ["src-v2/widgets/*"],
       "@/features/*": ["src-v2/features/*"],
       "@/entities/*": ["src-v2/entities/*"],
-      "@/shared/*":   ["src-v2/shared/*"]
+      "@/shared/*":   ["src-v2/shared/*"],
+      "@/test/*":     ["src-v2/test/*"]
     }
   },
   "include": ["src-v2"]

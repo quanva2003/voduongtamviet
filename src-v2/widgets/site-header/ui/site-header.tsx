@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useMatch } from "react-router-dom";
 
 import { cn } from "@/shared/lib/cn";
 import { Button, Container, Link, VisuallyHidden } from "@/shared/ui";
@@ -14,6 +15,28 @@ const NAV_HREFS: Record<(typeof NAV_KEYS)[number], string> = {
 };
 const LOCALES = ["vi", "en", "ja"] as const;
 
+function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
+  const exactMatch = useMatch(to);
+  const prefixMatch = useMatch(`${to}/*`);
+  const isActive = !!(exactMatch ?? prefixMatch);
+
+  return (
+    <Link
+      to={to}
+      className={cn(
+        "relative text-[length:var(--text-body-sm)] transition-colors",
+        isActive ? "text-washi" : "text-washi/70 hover:text-washi",
+        "after:absolute after:-bottom-0.5 after:left-0 after:h-px after:transition-all",
+        isActive
+          ? "after:w-full after:bg-[var(--color-shu-seal)]"
+          : "after:w-0 hover:after:w-full hover:after:bg-washi/50",
+      )}
+    >
+      {children}
+    </Link>
+  );
+}
+
 export function SiteHeader() {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +50,7 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close menu on Escape and trap focus
+  // Close menu on Escape
   useEffect(() => {
     if (!menuOpen) return;
     const onKey = (e: KeyboardEvent) => {
@@ -65,13 +88,9 @@ export function SiteHeader() {
           {/* Desktop nav */}
           <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">
             {NAV_KEYS.map((key) => (
-              <Link
-                key={key}
-                to={NAV_HREFS[key]}
-                className="text-[length:var(--text-body-sm)] text-washi/80 hover:text-washi"
-              >
+              <NavLink key={key} to={NAV_HREFS[key]}>
                 {t(`nav.${key}`)}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 
