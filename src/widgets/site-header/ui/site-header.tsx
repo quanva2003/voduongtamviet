@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMatch } from "react-router-dom";
 
+import { LanguageSwitcher } from "@/features/language-switcher";
 import { cn } from "@/shared/lib/cn";
 import { Button, Container, Link, VisuallyHidden } from "@/shared/ui";
 
@@ -13,7 +14,6 @@ const NAV_HREFS: Record<(typeof NAV_KEYS)[number], string> = {
   articles: "/articles",
   schedule: "/schedule",
 };
-const LOCALES = ["vi", "en", "ja"] as const;
 
 function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   const exactMatch = useMatch(to);
@@ -38,7 +38,7 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
 }
 
 export function SiteHeader() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -63,16 +63,13 @@ export function SiteHeader() {
     return () => document.removeEventListener("keydown", onKey);
   }, [menuOpen]);
 
-  const changeLanguage = (locale: string) => {
-    void i18n.changeLanguage(locale);
-    setMenuOpen(false);
-  };
-
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-        scrolled ? "bg-sumi-ink/95 shadow-lg backdrop-blur-md" : "bg-transparent",
+        "fixed inset-x-0 top-0 z-50 w-full transition-all duration-500",
+        scrolled
+          ? "bg-sumi-ink/95 shadow-lg backdrop-blur-md"
+          : "bg-gradient-to-b from-sumi-ink/80 to-transparent backdrop-blur-sm",
       )}
     >
       <Container size="xl">
@@ -96,23 +93,7 @@ export function SiteHeader() {
 
           {/* Desktop: lang switcher + CTA */}
           <div className="hidden items-center gap-3 md:flex">
-            <div className="flex items-center gap-1">
-              {LOCALES.map((locale) => (
-                <button
-                  key={locale}
-                  onClick={() => changeLanguage(locale)}
-                  className={cn(
-                    "rounded px-2 py-0.5 text-[length:var(--text-body-sm)] transition-colors",
-                    i18n.language === locale
-                      ? "bg-shu-seal text-washi"
-                      : "text-washi/60 hover:text-washi",
-                  )}
-                  aria-pressed={i18n.language === locale}
-                >
-                  {locale.toUpperCase()}
-                </button>
-              ))}
-            </div>
+            <LanguageSwitcher />
             <Link to="/booking">
               <Button size="sm" variant="primary">
                 {t("buttons.register")}
@@ -168,21 +149,8 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="mt-8 flex gap-2">
-          {LOCALES.map((locale) => (
-            <button
-              key={locale}
-              onClick={() => changeLanguage(locale)}
-              className={cn(
-                "rounded px-3 py-1 text-[length:var(--text-body-sm)] transition-colors",
-                i18n.language === locale
-                  ? "bg-shu-seal text-washi"
-                  : "text-washi/60 hover:text-washi",
-              )}
-            >
-              {locale.toUpperCase()}
-            </button>
-          ))}
+        <div className="mt-8">
+          <LanguageSwitcher onSwitch={() => setMenuOpen(false)} />
         </div>
         <Link to="/booking" className="mt-6 block" onClick={() => setMenuOpen(false)}>
           <Button className="w-full" size="md">

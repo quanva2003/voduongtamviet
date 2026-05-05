@@ -23,7 +23,11 @@ export function SiteLayout({ locale }: Props) {
   return (
     <>
       <SiteHeader />
-      <main id="main-content" tabIndex={-1}>
+      <main
+        id="main-content"
+        tabIndex={-1}
+        style={{ overflowX: "hidden", position: "relative" }}
+      >
         <Outlet />
       </main>
       <SiteFooter />

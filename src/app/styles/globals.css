@@ -1,7 +1,13 @@
-@import "tailwindcss";
 @import "./tokens.css";
 @import "./fonts.css";
 @import "./reset.css";
+@import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 html {
   font-family: var(--font-body);

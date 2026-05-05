@@ -14,9 +14,10 @@ const LOCALES: { code: Locale; label: string }[] = [
 
 interface LanguageSwitcherProps {
   className?: string;
+  onSwitch?: () => void;
 }
 
-export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ className, onSwitch }: LanguageSwitcherProps) {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,6 +29,7 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
     const { pathnameWithoutLocale } = parseLocaleFromPath(location.pathname);
     const newPath = prefixLocale(pathnameWithoutLocale, locale);
     navigate(newPath, { replace: true });
+    onSwitch?.();
   };
 
   return (

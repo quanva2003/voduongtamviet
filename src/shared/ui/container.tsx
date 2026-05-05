@@ -8,17 +8,22 @@ export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   size?: ContainerSize;
 }
 
-const sizeClasses: Record<ContainerSize, string> = {
-  sm: "max-w-[var(--container-sm)]",
-  md: "max-w-[var(--container-md)]",
-  lg: "max-w-[var(--container-lg)]",
-  xl: "max-w-[var(--container-xl)]",
-  "2xl": "max-w-[var(--container-2xl)]",
+const sizeMap: Record<ContainerSize, string> = {
+  sm: "640px",
+  md: "768px",
+  lg: "1024px",
+  xl: "1200px",
+  "2xl": "1400px",
 };
 
 export const Container = forwardRef<HTMLDivElement, ContainerProps>(
-  ({ size = "md", className, children, ...props }, ref) => (
-    <div ref={ref} className={cn("mx-auto w-full px-4", sizeClasses[size], className)} {...props}>
+  ({ size = "md", className, children, style, ...props }, ref) => (
+    <div
+      ref={ref}
+      className={cn("mx-auto w-full px-4 sm:px-6", className)}
+      style={{ maxWidth: sizeMap[size], ...style }}
+      {...props}
+    >
       {children}
     </div>
   ),
