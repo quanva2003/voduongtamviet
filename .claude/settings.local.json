@@ -21,7 +21,10 @@
       "Bash(git add *)",
       "Bash(git restore *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(grep -E \"\\\\.\\(json|ts|tsx|yaml|yml\\)$\")",
+      "Bash(git tag *)",
+      "Bash(git mv *)"
     ]
   }
 }
