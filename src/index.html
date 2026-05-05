@@ -2,11 +2,43 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+
+    <!-- Preload critical fonts (Inter 400 — body) -->
+    <link
+      rel="preload"
+      href="/fonts/inter-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- Preload Playfair Display 400 — display headings -->
+    <link
+      rel="preload"
+      href="/fonts/playfair-display-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Default OG / social card (overridden per-page by SeoMeta) -->
+    <meta property="og:site_name" content="Võ Đường Tâm Việt" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://tamviet.vn/og/default.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://tamviet.vn/og/default.png" />
+
     <title>Võ Đường Tâm Việt</title>
   </head>
   <body>
+    <!-- Skip navigation — visually hidden until focused (CSS in globals.css) -->
+    <a href="#main-content" class="skip-link">Bỏ qua điều hướng</a>
     <div id="root"></div>
     <script type="module" src="/main.tsx"></script>
   </body>

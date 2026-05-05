@@ -1,31 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Trang chủ -->
   <url>
-    <loc>https://voduongtamviet.vercel.app/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://tamviet.vn</loc>
+    <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn"/>
   </url>
-  
-  <!-- Trang giới thiệu -->
   <url>
-    <loc>https://voduongtamviet.vercel.app/about</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://tamviet.vn/en</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/about</loc>
+    <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/about"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/about"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/about"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/about"/>
   </url>
-  
-  <!-- Trang đăng ký -->
   <url>
-    <loc>https://voduongtamviet.vercel.app/registration</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://tamviet.vn/en/about</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/about"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/about"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/about"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/about"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja/about</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/about"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/about"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/about"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/about"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/registration</loc>
+    <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/registration"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/registration"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/registration"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/registration"/>
   </url>
-  
+  <url>
+    <loc>https://tamviet.vn/en/registration</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/registration"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/registration"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/registration"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/registration"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja/registration</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/registration"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/registration"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/registration"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/registration"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/articles</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/articles"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/articles"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/articles"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/articles"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/en/articles</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/articles"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/articles"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/articles"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/articles"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja/articles</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/articles"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/articles"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/articles"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/articles"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/schedule</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/schedule"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/schedule"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/schedule"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/schedule"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/en/schedule</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/schedule"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/schedule"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/schedule"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/schedule"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja/schedule</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/schedule"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/schedule"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/schedule"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/schedule"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/booking</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/booking"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/booking"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/booking"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/booking"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/en/booking</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/booking"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/booking"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/booking"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/booking"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja/booking</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/booking"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/booking"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/booking"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/booking"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/belt-promotion/iii-2025</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/belt-promotion/iii-2025"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/en/belt-promotion/iii-2025</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/belt-promotion/iii-2025"/>
+  </url>
+  <url>
+    <loc>https://tamviet.vn/ja/belt-promotion/iii-2025</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://tamviet.vn/en/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="ja" href="https://tamviet.vn/ja/belt-promotion/iii-2025"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://tamviet.vn/belt-promotion/iii-2025"/>
+  </url>
 </urlset>

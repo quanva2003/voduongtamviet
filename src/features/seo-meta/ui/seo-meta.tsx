@@ -48,6 +48,10 @@ export function SeoMeta({
       <meta property="og:url" content={canonical} />
       {description && <meta property="og:description" content={description} />}
       {ogImage && <meta property="og:image" content={`${ORIGIN}${ogImage}`} />}
+      {ogImage && <meta property="og:image:width" content="1200" />}
+      {ogImage && <meta property="og:image:height" content="630" />}
+      {ogImage && <meta name="twitter:card" content="summary_large_image" />}
+      {ogImage && <meta name="twitter:image" content={`${ORIGIN}${ogImage}`} />}
       <link rel="alternate" hrefLang="vi" href={viUrl} />
       <link rel="alternate" hrefLang="en" href={enUrl} />
       <link rel="alternate" hrefLang="ja" href={jaUrl} />

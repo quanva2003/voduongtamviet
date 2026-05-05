@@ -1,125 +1,150 @@
-# Võ Đường Tâm Việt — Website
+# Võ Đường Tâm Việt — Website v2.0
 
-## Working on v2
+Website chính thức của Võ Đường Tâm Việt — võ đường karate truyền thống tại TP. Hồ Chí Minh.
 
-The refactored codebase lives in `src-v2/` (Feature-Sliced Design, Tailwind 4, React 19).
-The original `src/` runs untouched on the same repo until Sprint 5 cutover.
+**Production:** https://voduongtamviet.vercel.app  
+**Canonical domain:** https://tamviet.vn
 
-### Commands
+---
 
-| Task | Command |
-|------|---------|
-| Dev server (v2) | `npm run dev:v2` → http://localhost:5174 |
-| Dev server (v1) | `npm run dev` → http://localhost:5173 |
-| Build v2 | `npm run build:v2` → `dist-v2/` |
-| Build v1 | `npm run build` → `dist/` |
-| Lint (v2) | `npm run lint` |
-| Typecheck (v2) | `npm run typecheck` |
-| Tests | `npm test` |
-| Tests watch | `npm run test:watch` |
-| Coverage | `npm run test:coverage` |
+## Stack
 
-### Architecture
+| Layer | Technology |
+|-------|-----------|
+| UI | React 19 + TypeScript |
+| Build | Vite 7 + Tailwind CSS 4 |
+| Routing | React Router 7 (multi-locale) |
+| i18n | i18next (vi / en / ja) |
+| Animation | Framer Motion (LazyMotion + domAnimation) |
+| Forms | React Hook Form + Zod |
+| Testing | Vitest + RTL + jest-axe |
+| E2E | Playwright |
+| Hosting | Vercel |
+| Architecture | Feature-Sliced Design (FSD) |
 
-Layers (import direction: top → bottom only):
+---
+
+## Local dev quickstart
+
+```bash
+git clone <repo>
+cd vdtv
+npm install
+
+npm run dev          # → http://localhost:5173
+npm run build        # type-check + vite build → dist/
+npm run preview      # serve dist/ locally
+npm test             # unit + component tests (Vitest)
+npm run test:coverage # coverage report → coverage/
+npm run typecheck    # tsc strict check
+npm run lint         # ESLint with FSD layer rules
+```
+
+### E2E tests (Playwright)
+
+```bash
+npx playwright install chromium   # first time only
+npm run e2e                        # headless
+npm run e2e:ui                     # interactive UI
+```
+
+### Image & OG optimization
+
+```bash
+# Place source images in src/shared/assets/
+npm run optimize:images   # → public/images/optimized/{name}-{size}.{avif,webp,jpg}
+
+# Regenerate OG social cards
+npm run generate:og       # → public/images/og/*.png
+```
+
+---
+
+## Folder structure
+
+```
+src/
+├── app/              # Bootstrap: providers, router, global styles
+│   ├── components/   # Layout: SiteLayout, ErrorBoundary, PageSkeleton
+│   ├── providers/    # RouterProvider, MotionProvider, I18nProvider
+│   ├── routes/       # Route definitions (lazy per page, multi-locale)
+│   └── styles/       # tokens.css, globals.css, fonts.css, reset.css
+├── pages/            # Route-level components (one dir per route)
+│   ├── home/
+│   ├── about/
+│   ├── registration/
+│   ├── articles/
+│   ├── article-detail/
+│   ├── belt-promotion/
+│   ├── booking/
+│   ├── schedule/
+│   ├── instructor-detail/
+│   └── not-found/
+├── widgets/          # Complex composed UI blocks (not routable)
+│   ├── site-header/
+│   ├── site-footer/
+│   ├── hero-cinematic/
+│   ├── hero-zen/
+│   └── ...
+├── features/         # User-facing capabilities
+│   ├── registration-form/
+│   ├── book-class/
+│   ├── article-filter/
+│   ├── language-switcher/
+│   └── seo-meta/
+├── entities/         # Domain models + data + card UI
+│   ├── instructor/
+│   ├── article/
+│   ├── class-schedule/
+│   └── ...
+└── shared/           # Pure utilities, design tokens, primitives
+    ├── ui/           # Button, Input, Card, Picture, Badge, …
+    ├── lib/          # cn, formatDate, motion, hooks
+    ├── i18n/         # i18next config + locale JSON files
+    └── assets/       # Source images (before optimization)
+```
+
+Import direction (FSD layer rule — enforced by ESLint):
 
 ```
 app → pages → widgets → features → entities → shared
 ```
 
-See `docs/ARCHITECTURE.md` for the full FSD spec.
-
-### Commit convention
-
-Conventional Commits enforced by commitlint:
-
-```
-feat(header): add mobile hamburger animation
-fix(form): validate phone number before submit
-chore(deps): upgrade framer-motion to 12
-```
-
-### Vercel preview for `refactor/v2`
-
-The v2 branch needs its own Vercel project (separate from the v1 production project) configured in the dashboard:
-
-- **Build Command**: `npm run build:v2`
-- **Output Directory**: `dist-v2`
-- **Root Directory**: `.` (project root)
-- **Node Version**: 20
+Crossing layers upward is a lint error.
 
 ---
 
-# React + TypeScript + Vite
+## Commit convention
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Conventional Commits enforced by commitlint + Husky:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+feat(registration): add honeypot anti-spam field
+fix(booking): preserve draft state across page refresh
+chore(deps): upgrade framer-motion 12
+docs(onboarding): add folder structure guide
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Deep docs
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Document | Contents |
+|----------|---------|
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | FSD layers, import rules |
+| [DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md) | Tokens, typography, components |
+| [ONBOARDING.md](docs/ONBOARDING.md) | New dev guide |
+| [MIGRATION-MAP.md](docs/MIGRATION-MAP.md) | v1 → v2 changes |
+| [CHANGELOG.md](CHANGELOG.md) | Release history |
+
+---
+
+## Rollback to v1
+
+```bash
+git checkout v1-final
+npm install
+npm run dev
 ```
+
+The v1 source is also preserved in `src-v1-backup/` on the main branch.

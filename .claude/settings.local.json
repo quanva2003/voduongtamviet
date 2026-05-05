@@ -24,7 +24,14 @@
       "Bash(git push *)",
       "Bash(grep -E \"\\\\.\\(json|ts|tsx|yaml|yml\\)$\")",
       "Bash(git tag *)",
-      "Bash(git mv *)"
+      "Bash(git mv *)",
+      "Bash(node --loader tsx/esm scripts/generate-og-images.ts)",
+      "Bash(npx tsx *)",
+      "Bash(node scripts/generate-sitemap.js)",
+      "Bash(mkdir -p \"C:/Users/vanan/.claude/projects/d--vdtv/memory\" && echo \"done\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\vanan\\.claude\\projects\\d--vdtv"
     ]
   }
 }

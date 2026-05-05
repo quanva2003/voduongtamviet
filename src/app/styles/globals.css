@@ -16,3 +16,38 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-washi);
 }
+
+/* Skip navigation — hidden off-screen, visible on focus */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--color-ink);
+  color: var(--color-washi);
+  font-size: 0.875rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  text-decoration: none;
+  transition: top 0.1s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion — applied by MotionProvider via framer-motion MotionConfig */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus ring — ensure visible on all interactive elements */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}

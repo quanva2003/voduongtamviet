@@ -23,7 +23,7 @@ export function SiteLayout({ locale }: Props) {
   return (
     <>
       <SiteHeader />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Outlet />
       </main>
       <SiteFooter />
