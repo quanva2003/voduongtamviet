@@ -33,8 +33,5 @@ jobs:
       - name: Test (v2)
         run: npm test
 
-      - name: Build v1
+      - name: Build
         run: npm run build
-
-      - name: Build v2
-        run: npm run build:v2
