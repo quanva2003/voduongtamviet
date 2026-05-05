@@ -22,12 +22,12 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const location = useLocation();
   const currentLocale = i18n.language as Locale;
 
-  const switchLocale = (locale: Locale) => {
+  const switchLocale = async (locale: Locale) => {
+    await i18n.changeLanguage(locale);
+    localStorage.setItem("preferred-locale", locale);
     const { pathnameWithoutLocale } = parseLocaleFromPath(location.pathname);
     const newPath = prefixLocale(pathnameWithoutLocale, locale);
-    void i18n.changeLanguage(locale);
-    localStorage.setItem("preferred-locale", locale);
-    navigate(newPath);
+    navigate(newPath, { replace: true });
   };
 
   return (
@@ -39,7 +39,7 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
       {LOCALES.map(({ code, label }) => (
         <button
           key={code}
-          onClick={() => switchLocale(code)}
+          onClick={() => void switchLocale(code)}
           aria-pressed={currentLocale === code}
           className={cn(
             "rounded px-2 py-0.5 text-[length:var(--text-body-sm)] transition-colors",

@@ -1,3 +1,5 @@
+import type React from "react";
+
 import { cn } from "@/shared/lib/cn";
 
 const OPTIMIZED_WIDTHS = [320, 640, 960, 1280, 1920] as const;
@@ -20,6 +22,7 @@ export interface PictureProps {
   height?: number;
   className?: string;
   imgClassName?: string;
+  onError?: React.ReactEventHandler<HTMLImageElement>;
 }
 
 function buildSrcSet(base: string, ext: string): string {
@@ -38,6 +41,7 @@ export function Picture({
   height,
   className,
   imgClassName,
+  onError,
 }: PictureProps) {
   const base = src.replace(/\.[^.]+$/, "");
 
@@ -67,6 +71,7 @@ export function Picture({
           height={height}
           className={cn("h-full w-full object-cover", imgClassName)}
           style={style}
+          onError={onError}
         />
       </picture>
     );
@@ -85,6 +90,7 @@ export function Picture({
         height={height}
         className={cn("h-full w-full object-cover", imgClassName)}
         style={style}
+        onError={onError}
       />
     </picture>
   );

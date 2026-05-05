@@ -12,6 +12,7 @@ export interface HeroCinematicProps {
   ctaSecondary?: { label: string; href: string };
   kanjiWatermark?: string;
   backgroundImage?: string;
+  backgroundImageAlt?: string;
 }
 
 export function HeroCinematic({
@@ -23,24 +24,41 @@ export function HeroCinematic({
   ctaSecondary,
   kanjiWatermark,
   backgroundImage,
+  backgroundImageAlt,
 }: HeroCinematicProps) {
   return (
-    <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-sumi-ink text-washi">
-      {/* Background image */}
-      {backgroundImage && (
-        <Picture
-          src={backgroundImage}
-          alt=""
-          aspectRatio="16/9"
-          loading="eager"
-          fetchPriority="high"
-          className="absolute inset-0 h-full w-full opacity-30"
-          imgClassName="object-cover"
+    <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-sumi-ink text-washi">
+      {/* Background: photo when available, diagonal texture fallback otherwise */}
+      {backgroundImage ? (
+        <div className="absolute inset-0 z-0">
+          <Picture
+            src={backgroundImage}
+            alt={backgroundImageAlt ?? ""}
+            aspectRatio="16/9"
+            loading="eager"
+            fetchPriority="high"
+            className="h-full w-full"
+            imgClassName="object-cover object-center"
+          />
+        </div>
+      ) : (
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(201,169,97,0.04) 10px, rgba(201,169,97,0.04) 20px)",
+          }}
         />
       )}
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-sumi-ink/60 via-transparent to-sumi-ink/80" />
+      {/* Gradient overlay: dark at bottom (text), lightens toward top */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(26,24,21,0.95) 0%, rgba(26,24,21,0.5) 55%, rgba(26,24,21,0.25) 100%)",
+        }}
+      />
 
       {/* Kanji watermark */}
       {kanjiWatermark && (
@@ -49,11 +67,11 @@ export function HeroCinematic({
           size="xl"
           position="watermark"
           color="inherit"
-          className="right-8 bottom-8"
+          className="right-8 bottom-8 z-10"
         />
       )}
 
-      <Container size="lg" className="relative z-10 py-24">
+      <Container size="lg" className="relative z-10 w-full pb-16 pt-32 lg:pt-40">
         <motion.div
           variants={staggerChildren}
           initial="hidden"

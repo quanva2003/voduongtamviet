@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Badge, Card, Link, Picture } from "@/shared/ui";
 
 import type { Article } from "../model/types";
@@ -10,12 +12,24 @@ interface ArticleCardProps {
 }
 
 export function ArticleCard({ article, categoryLabel }: ArticleCardProps) {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <Card variant="zen" padding="sm" className="overflow-hidden">
-      <div className="relative mb-4 overflow-hidden rounded-[var(--radius-md)]">
-        <Picture src={article.image} alt={article.title} aspectRatio="16/9" />
+      <div
+        className="relative mb-4 overflow-hidden rounded-[var(--radius-md)] bg-sumi-paper"
+        style={{ aspectRatio: "16/9" }}
+      >
+        {!imgError && (
+          <Picture
+            src={article.image}
+            alt={article.title}
+            aspectRatio="16/9"
+            onError={() => setImgError(true)}
+          />
+        )}
         {categoryLabel && (
-          <div className="absolute top-3 left-3">
+          <div className="absolute bottom-3 left-3">
             <Badge color="danger" pill>
               {categoryLabel}
             </Badge>
