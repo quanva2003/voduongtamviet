@@ -11,17 +11,17 @@ describe("Container", () => {
 
   it("applies default md max-width via inline style", () => {
     const { container } = render(<Container>X</Container>);
-    expect(container.firstChild).toHaveStyle({ maxWidth: "768px" });
+    expect(container.firstChild).toHaveStyle({ maxWidth: "var(--container-md)" });
   });
 
   it("applies xl max-width via inline style", () => {
     const { container } = render(<Container size="xl">X</Container>);
-    expect(container.firstChild).toHaveStyle({ maxWidth: "1200px" });
+    expect(container.firstChild).toHaveStyle({ maxWidth: "var(--container-xl)" });
   });
 
   it("applies 2xl max-width via inline style", () => {
     const { container } = render(<Container size="2xl">X</Container>);
-    expect(container.firstChild).toHaveStyle({ maxWidth: "1400px" });
+    expect(container.firstChild).toHaveStyle({ maxWidth: "var(--container-2xl)" });
   });
 
   it("is centered with inline margin auto", () => {
