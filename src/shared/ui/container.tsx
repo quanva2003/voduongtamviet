@@ -11,11 +11,11 @@ export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
 // Dùng inline style thay vì Tailwind arbitrary value để tránh Tailwind v4
 // không resolve var() trong max-w-[var(--container-xl)] đúng cách
 const sizeMap: Record<ContainerSize, string> = {
-  sm: "640px",
-  md: "768px",
-  lg: "1024px",
-  xl: "1200px",
-  "2xl": "1400px",
+  sm: "var(--container-sm)",
+  md: "var(--container-md)",
+  lg: "var(--container-lg)",
+  xl: "var(--container-xl)",
+  "2xl": "var(--container-2xl)",
 };
 
 export const Container = forwardRef<HTMLDivElement, ContainerProps>(
