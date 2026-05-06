@@ -24,9 +24,9 @@ describe("Container", () => {
     expect(container.firstChild).toHaveStyle({ maxWidth: "1400px" });
   });
 
-  it("is centered with mx-auto", () => {
+  it("is centered with inline margin auto", () => {
     const { container } = render(<Container>X</Container>);
-    expect(container.firstChild).toHaveClass("mx-auto");
+    expect(container.firstChild).toHaveStyle({ marginLeft: "auto", marginRight: "auto" });
   });
 
   it("forwards ref", () => {
