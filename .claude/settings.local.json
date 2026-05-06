@@ -28,7 +28,13 @@
       "Bash(node --loader tsx/esm scripts/generate-og-images.ts)",
       "Bash(npx tsx *)",
       "Bash(node scripts/generate-sitemap.js)",
-      "Bash(mkdir -p \"C:/Users/vanan/.claude/projects/d--vdtv/memory\" && echo \"done\")"
+      "Bash(mkdir -p \"C:/Users/vanan/.claude/projects/d--vdtv/memory\" && echo \"done\")",
+      "Bash(Get-ChildItem -Path \"d:\\\\vdtv\\\\public\" -Force)",
+      "Bash(Select-Object -Property Name, FullName, PSIsContainer)",
+      "Bash(git stash *)",
+      "Bash(powershell -Command \"Get-ChildItem -Name 'tailwind*' -Recurse -Depth 1 2>/dev/null | Select-Object -First 20\")",
+      "Bash(grep -o \"html,body{[^}]*}\" d:/vdtv/dist/assets/index-CDciF7pY.css)",
+      "Bash(PowerShell -Command ' *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\vanan\\.claude\\projects\\d--vdtv"

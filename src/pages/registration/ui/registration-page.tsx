@@ -4,6 +4,7 @@ import { locations } from "@/entities/location";
 import { RegistrationForm } from "@/features/registration-form";
 import { SeoMeta } from "@/features/seo-meta";
 import type { Locale } from "@/shared/i18n";
+import { Container } from "@/shared/ui";
 import { CourseInfo, courseInfoData } from "@/widgets/course-info";
 import { CtaSection } from "@/widgets/cta-section";
 import { HeroZen } from "@/widgets/hero-zen";
@@ -32,7 +33,7 @@ export function Component() {
       />
 
       <section className="bg-washi py-[var(--space-24)]">
-        <div className="mx-auto max-w-[var(--container-2xl)] px-4 sm:px-6">
+        <Container size="2xl">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-[3fr_2fr]">
             <div>
               <RegistrationForm />
@@ -41,7 +42,7 @@ export function Component() {
               <LocationsMap locations={localeLocations} />
             </aside>
           </div>
-        </div>
+        </Container>
       </section>
 
       <CourseInfo items={courseItems} />

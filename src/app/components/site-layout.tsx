@@ -26,7 +26,7 @@ export function SiteLayout({ locale }: Props) {
       <main
         id="main-content"
         tabIndex={-1}
-        style={{ overflowX: "hidden", position: "relative" }}
+        style={{ overflowX: "hidden", position: "relative", width: "100%" }}
       >
         <Outlet />
       </main>

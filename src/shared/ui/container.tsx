@@ -8,6 +8,8 @@ export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   size?: ContainerSize;
 }
 
+// Dùng inline style thay vì Tailwind arbitrary value để tránh Tailwind v4
+// không resolve var() trong max-w-[var(--container-xl)] đúng cách
 const sizeMap: Record<ContainerSize, string> = {
   sm: "640px",
   md: "768px",
@@ -20,8 +22,13 @@ export const Container = forwardRef<HTMLDivElement, ContainerProps>(
   ({ size = "md", className, children, style, ...props }, ref) => (
     <div
       ref={ref}
-      className={cn("mx-auto w-full px-4 sm:px-6", className)}
-      style={{ maxWidth: sizeMap[size], ...style }}
+      className={cn("w-full px-4 sm:px-6", className)}
+      style={{
+        maxWidth: sizeMap[size],
+        marginLeft: "auto",
+        marginRight: "auto",
+        ...style,
+      }}
       {...props}
     >
       {children}

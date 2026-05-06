@@ -13,16 +13,22 @@ export interface HeroZenProps {
 export function HeroZen({ eyebrow, headline, subline, ctaPrimary }: HeroZenProps) {
   return (
     <section
-      className="relative flex min-h-[50vh] items-center overflow-hidden bg-sumi-ink py-20 pt-32 text-washi"
+      className="relative flex min-h-[50vh] items-center overflow-hidden bg-sumi-ink py-20 text-washi"
       style={{
+        // Subtle diagonal texture — consistent với HeroCinematic
         backgroundImage:
-          "repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(201,169,97,0.02) 40px, rgba(201,169,97,0.02) 41px)",
+          "repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(201,169,97,0.025) 40px, rgba(201,169,97,0.025) 41px)",
+        paddingTop: "calc(5rem + 64px)", // 64px = header height
       }}
     >
+      {/* Bottom fade để blend vào section bên dưới */}
       <div
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-24"
-        style={{ background: "linear-gradient(to bottom, transparent, rgba(26,24,21,0.3))" }}
+        className="pointer-events-none absolute bottom-0 left-0 right-0 h-20"
+        style={{
+          background: "linear-gradient(to bottom, transparent, rgba(26,24,21,0.2))",
+        }}
       />
+
       <Container size="md" className="relative z-10">
         <motion.div
           variants={staggerChildren}

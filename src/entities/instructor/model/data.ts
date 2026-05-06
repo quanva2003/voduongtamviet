@@ -80,6 +80,7 @@ export const instructors: Record<Locale, Instructor[]> = {
       achievements: [
         "Silver Medal — National Karate Championship 2018",
         "WKF Coach Level 1 Certified",
+        "Specialist in youth karate training",
       ],
       yearsTeaching: 5,
       beltRank: "2nd Dan Black Belt",
@@ -94,6 +95,7 @@ export const instructors: Record<Locale, Instructor[]> = {
       achievements: [
         "Top 3 — National Youth Karate Championship 2019",
         "WKF Coach Level 1 Certified",
+        "Professional kumite coach",
       ],
       yearsTeaching: 5,
       beltRank: "1st Dan Black Belt",
@@ -105,7 +107,7 @@ export const instructors: Record<Locale, Instructor[]> = {
       slug: "nguyen-van-viet",
       name: "グエン・ヴァン・ヴィエット師範",
       title: "道場長",
-      bio: "ヴィエット師範はタムヴィエット道場の創設者であり、20年以上の指導歴を持つ。",
+      bio: "ヴィエット師範はタムヴィエット道場の創設者であり、20年以上の指導歴を持ち、数千名の生徒を育ててきた。",
       photo: "/images/instructors/mr-viet",
       achievements: [
         "全国大会金メダル 2008年",
@@ -124,7 +126,11 @@ export const instructors: Record<Locale, Instructor[]> = {
       title: "指導員",
       bio: "熱心な指導で知られ、子供・女性クラスを専門とする。",
       photo: "/images/instructors/ms-nhi",
-      achievements: ["全国大会銀メダル 2018年", "WKFコーチ認定"],
+      achievements: [
+        "全国大会銀メダル 2018年",
+        "WKFコーチレベル1認定",
+        "ジュニア空手指導の専門家",
+      ],
       yearsTeaching: 5,
       beltRank: "二段",
     },
@@ -135,7 +141,11 @@ export const instructors: Record<Locale, Instructor[]> = {
       title: "指導員",
       bio: "多くの生徒を国内外の試合で入賞へ導いてきた。",
       photo: "/images/instructors/mr-quan",
-      achievements: ["全国ジュニア大会第3位 2019年"],
+      achievements: [
+        "全国ジュニア大会第3位 2019年",
+        "WKFコーチレベル1認定",
+        "プロフェッショナル組手コーチ",
+      ],
       yearsTeaching: 5,
       beltRank: "初段",
     },
