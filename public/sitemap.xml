@@ -6,7 +6,7 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://tamviet.vn</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn"/>
@@ -16,7 +16,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn"/>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn"/>
@@ -36,7 +36,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/about</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/about"/>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en/about</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/about"/>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja/about</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/about"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/registration</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/registration"/>
@@ -76,7 +76,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en/registration</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/registration"/>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja/registration</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/registration"/>
@@ -96,7 +96,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/articles</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/articles"/>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en/articles</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/articles"/>
@@ -116,7 +116,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja/articles</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/articles"/>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/schedule</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/schedule"/>
@@ -136,7 +136,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en/schedule</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/schedule"/>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja/schedule</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/schedule"/>
@@ -156,7 +156,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/booking</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/booking"/>
@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en/booking</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/booking"/>
@@ -176,7 +176,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja/booking</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/booking"/>
@@ -186,7 +186,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/belt-promotion/iii-2025</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/belt-promotion/iii-2025"/>
@@ -196,7 +196,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/en/belt-promotion/iii-2025</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/belt-promotion/iii-2025"/>
@@ -206,7 +206,7 @@
   </url>
   <url>
     <loc>https://tamviet.vn/ja/belt-promotion/iii-2025</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
       <xhtml:link rel="alternate" hreflang="vi" href="https://tamviet.vn/belt-promotion/iii-2025"/>
