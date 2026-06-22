@@ -13,7 +13,7 @@ export function LocationCard({ location, selected = false, onClick }: LocationCa
     <Card
       variant={selected ? "featured" : "zen"}
       padding="sm"
-      className="cursor-pointer overflow-hidden transition-shadow hover:shadow-md"
+      className="cursor-pointer overflow-hidden transition-colors hover:border-border-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shu-seal"
       onClick={onClick}
       role={onClick ? "button" : undefined}
       tabIndex={onClick ? 0 : undefined}
@@ -26,7 +26,7 @@ export function LocationCard({ location, selected = false, onClick }: LocationCa
         className="mb-3 overflow-hidden rounded-[var(--radius-md)]"
       />
       <div className="px-1 pb-1">
-        <h3 className="font-display text-[length:var(--text-h3)] text-text-primary">
+        <h3 className="font-body text-[length:var(--text-h3)] font-medium text-text-primary">
           {location.name}
         </h3>
         <p className="mt-1 text-[length:var(--text-body-sm)] text-text-secondary">

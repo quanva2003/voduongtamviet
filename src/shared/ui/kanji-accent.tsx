@@ -16,7 +16,7 @@ const sizeClasses: Record<KanjiSize, string> = {
   sm: "text-[length:var(--text-kanji-sm)]",
   md: "text-[length:var(--text-kanji-md)]",
   lg: "text-[length:var(--text-kanji-xl)]",
-  xl: "text-[192px]",
+  xl: "text-[length:var(--text-kanji-2xl)]",
 };
 
 const colorClasses: Record<KanjiColor, string> = {

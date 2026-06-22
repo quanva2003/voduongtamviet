@@ -23,7 +23,7 @@ export function ScrollToTop() {
           transition={{ duration: 0.3 }}
           onClick={() => window.scrollTo({ top: 0, behavior: reduced ? "instant" : "smooth" })}
           aria-label="Lên đầu trang"
-          className="fixed right-6 bottom-6 z-40 flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] bg-sumi-ink text-washi shadow-lg transition-colors hover:bg-shu-seal"
+          className="fixed right-6 bottom-6 z-40 flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] border border-border-strong bg-sumi-ink text-washi transition-colors hover:bg-shu-seal"
         >
           ↑
         </motion.button>

@@ -72,6 +72,8 @@
   --text-kanji-sm: 24px;
   --text-kanji-md: 48px;
   --text-kanji-xl: 96px;
+  --text-kanji-2xl: 192px;
+  --text-caption: 12px;
 }
 
 /* ── Dark mode overrides ────────────────────────────────────── */

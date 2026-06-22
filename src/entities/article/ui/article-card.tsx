@@ -37,7 +37,7 @@ export function ArticleCard({ article, categoryLabel }: ArticleCardProps) {
         )}
       </div>
       <div className="px-1 pb-2">
-        <h3 className="line-clamp-2 font-display text-[length:var(--text-h3)] text-text-primary">
+        <h3 className="line-clamp-2 font-body text-[length:var(--text-h3)] font-medium text-text-primary">
           {article.title}
         </h3>
         <p className="mt-2 line-clamp-3 text-[length:var(--text-body-sm)] text-text-secondary">

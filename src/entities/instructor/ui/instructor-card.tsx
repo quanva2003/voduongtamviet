@@ -35,7 +35,7 @@ export function InstructorCard({ instructor }: InstructorCardProps) {
         <p className="mb-0.5 text-[length:var(--text-eyebrow)] tracking-[0.15em] text-text-muted uppercase">
           {instructor.title}
         </p>
-        <h3 className="font-display text-[length:var(--text-h3)] text-text-primary">
+        <h3 className="font-body text-[length:var(--text-h3)] font-medium text-text-primary">
           {instructor.name}
         </h3>
         <p className="mt-1 line-clamp-2 text-[length:var(--text-body-sm)] text-text-secondary">
