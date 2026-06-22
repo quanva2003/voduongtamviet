@@ -50,13 +50,30 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close menu on Escape
+  // Close menu on Escape + trap focus inside while open
   useEffect(() => {
     if (!menuOpen) return;
+    const menu = menuRef.current;
+    const focusable = menu?.querySelectorAll<HTMLElement>(
+      'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
+    );
+    focusable?.[0]?.focus();
+
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setMenuOpen(false);
         toggleRef.current?.focus();
+        return;
+      }
+      if (e.key !== "Tab" || !focusable?.length) return;
+      const first = focusable[0]!;
+      const last = focusable[focusable.length - 1]!;
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
       }
     };
     document.addEventListener("keydown", onKey);
@@ -66,9 +83,9 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 w-full transition-all duration-500",
+        "fixed inset-x-0 top-0 z-50 w-full border-b border-transparent transition-all duration-300",
         scrolled
-          ? "bg-sumi-ink/95 shadow-lg backdrop-blur-md"
+          ? "border-border/20 bg-sumi-ink/95 backdrop-blur-md"
           : "bg-gradient-to-b from-sumi-ink/80 to-transparent backdrop-blur-sm",
       )}
     >

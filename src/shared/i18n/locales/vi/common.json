@@ -280,7 +280,8 @@
       "review": "Xác nhận"
     },
     "progress": {
-      "label": "Tiến trình đặt lịch"
+      "label": "Tiến trình đặt lịch",
+      "current": "hiện tại"
     },
     "ageGroup": {
       "kids": "Thiếu nhi",

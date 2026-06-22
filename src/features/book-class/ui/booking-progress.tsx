@@ -28,12 +28,13 @@ export function BookingProgress({ step }: BookingProgressProps) {
             <li key={key} className="flex items-center">
               <span
                 className={cn(
-                  "flex h-8 w-8 items-center justify-center rounded-full text-[length:var(--text-body-sm)] font-medium transition-colors",
-                  active && "bg-shu-seal text-washi",
-                  done && "bg-text-muted text-washi",
-                  !active && !done && "bg-border text-text-muted",
+                  "flex h-8 w-8 items-center justify-center rounded-full border text-[length:var(--text-body-sm)] font-medium transition-colors",
+                  active && "border-shu-seal text-shu-seal",
+                  done && "border-text-muted bg-text-muted text-washi",
+                  !active && !done && "border-border text-text-muted",
                 )}
                 aria-current={active ? "step" : undefined}
+                aria-label={active ? `${t(key)} (${t("booking.progress.current")})` : t(key)}
               >
                 {num}
               </span>

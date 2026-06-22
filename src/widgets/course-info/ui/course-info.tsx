@@ -30,7 +30,7 @@ export function CourseInfo({ items, eyebrow, title }: CourseInfoProps) {
               <p className="text-[length:var(--text-eyebrow)] tracking-[0.15em] text-text-muted uppercase">
                 {item.title}
               </p>
-              <p className="mt-2 font-display text-[length:var(--text-h3)] text-shu-seal">
+              <p className="mt-2 font-display text-[length:var(--text-h3)] text-text-primary">
                 {item.value}
               </p>
               <p className="mt-3 text-[length:var(--text-body-sm)] leading-relaxed text-text-secondary">

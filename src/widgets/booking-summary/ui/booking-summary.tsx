@@ -79,7 +79,7 @@ export function BookingSummaryWidget({
             <p className="text-[length:var(--text-eyebrow)] tracking-[0.15em] text-text-muted uppercase">
               Học phí
             </p>
-            <p className="mt-2 font-display text-[length:var(--text-h2)] text-shu-seal">
+            <p className="mt-2 font-display text-[length:var(--text-h2)] text-text-primary">
               350.000 VNĐ/tháng
             </p>
             <p className="mt-1 text-[length:var(--text-body-sm)] text-text-secondary">
@@ -95,7 +95,9 @@ export function BookingSummaryWidget({
 function SectionHeader({ label, editHref }: { label: string; editHref?: string }) {
   return (
     <div className="flex items-center justify-between">
-      <p className="font-display text-[length:var(--text-h3)] text-text-primary">{label}</p>
+      <h3 className="font-body text-[length:var(--text-h3)] font-medium text-text-primary">
+        {label}
+      </h3>
       {editHref && (
         <Link to={editHref} className="text-[length:var(--text-body-sm)] text-shu-seal">
           Chỉnh sửa

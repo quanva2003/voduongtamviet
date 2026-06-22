@@ -47,7 +47,7 @@ export function JourneyTimeline({ items, eyebrow, title }: JourneyTimelineProps)
               {/* Year bubble */}
               <div className="relative z-10 flex-shrink-0">
                 <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full border-2 border-shu-seal bg-sumi-paper">
-                  <span className="font-display text-[length:var(--text-body-sm)] font-bold text-shu-seal">
+                  <span className="font-display text-[length:var(--text-body-sm)] font-medium text-shu-seal">
                     {item.year}
                   </span>
                 </div>
@@ -55,7 +55,7 @@ export function JourneyTimeline({ items, eyebrow, title }: JourneyTimelineProps)
 
               {/* Content */}
               <div className="pt-2">
-                <h3 className="font-display text-[length:var(--text-h3)] text-text-primary">
+                <h3 className="font-body text-[length:var(--text-h3)] font-medium text-text-primary">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-[length:var(--text-body)] leading-relaxed text-text-secondary">

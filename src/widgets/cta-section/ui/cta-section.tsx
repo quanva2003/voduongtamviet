@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { fadeInUp, staggerChildren } from "@/shared/lib/motion";
+import { cinematicReveal, fadeInUp, staggerChildren } from "@/shared/lib/motion";
 import { Button, Container, EnsoCircle, KanjiAccent, Link } from "@/shared/ui";
 
 type CtaVariant = "zen" | "cinematic";
@@ -25,6 +25,8 @@ export function CtaSection({
   variant = "cinematic",
   kanjiWatermark,
 }: CtaSectionProps) {
+  const itemVariants = variant === "cinematic" ? cinematicReveal : fadeInUp;
+
   return (
     <section className={`relative overflow-hidden py-[var(--space-24)] ${variantClasses[variant]}`}>
       {kanjiWatermark && (
@@ -45,7 +47,7 @@ export function CtaSection({
           viewport={{ once: true, margin: "-80px" }}
           className="flex flex-col items-center text-center"
         >
-          <motion.div variants={fadeInUp}>
+          <motion.div variants={itemVariants}>
             <EnsoCircle
               size={80}
               stroke={1.5}
@@ -56,14 +58,14 @@ export function CtaSection({
           </motion.div>
 
           <motion.h2
-            variants={fadeInUp}
+            variants={itemVariants}
             className="font-display text-[length:var(--text-display-md)]"
           >
             {headline}
           </motion.h2>
 
           <motion.p
-            variants={fadeInUp}
+            variants={itemVariants}
             className={`mt-6 max-w-lg text-[length:var(--text-body-lg)] ${
               variant === "cinematic" ? "text-washi/80" : "text-text-secondary"
             }`}
@@ -71,7 +73,7 @@ export function CtaSection({
             {paragraph}
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="mt-10">
+          <motion.div variants={itemVariants} className="mt-10">
             <Link to={cta.href}>
               <Button size="lg" variant={variant === "cinematic" ? "primary" : "primary"} arrow>
                 {cta.label}

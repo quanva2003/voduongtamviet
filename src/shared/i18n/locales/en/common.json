@@ -267,7 +267,7 @@
       "contactInfo": "[EN] Your info",
       "review": "[EN] Review"
     },
-    "progress": { "label": "[EN] Booking progress" },
+    "progress": { "label": "[EN] Booking progress", "current": "[EN] current" },
     "ageGroup": {
       "kids": "[EN] Children",
       "teens": "[EN] Teenagers",

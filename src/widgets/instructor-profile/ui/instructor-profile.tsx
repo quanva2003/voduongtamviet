@@ -62,9 +62,9 @@ export function InstructorProfile({ instructor }: InstructorProfileProps) {
             </motion.div>
 
             <motion.div variants={fadeInUp} className="mt-6">
-              <p className="mb-3 font-display text-[length:var(--text-h3)] text-text-primary">
+              <h3 className="mb-3 font-body text-[length:var(--text-h3)] font-medium text-text-primary">
                 Thành tích
-              </p>
+              </h3>
               <ul className="flex flex-col gap-2">
                 {instructor.achievements.map((ach, i) => (
                   <li

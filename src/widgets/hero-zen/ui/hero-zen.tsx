@@ -13,22 +13,14 @@ export interface HeroZenProps {
 export function HeroZen({ eyebrow, headline, subline, ctaPrimary }: HeroZenProps) {
   return (
     <section
-      className="relative flex min-h-[50vh] items-center overflow-hidden bg-sumi-ink py-20 text-washi"
+      className="relative flex min-h-[50vh] items-center overflow-hidden bg-sumi-paper py-20 text-text-primary"
       style={{
-        // Subtle diagonal texture — consistent với HeroCinematic
+        // Subtle diagonal texture — đậm chất washi, khác hẳn HeroCinematic
         backgroundImage:
-          "repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(201,169,97,0.025) 40px, rgba(201,169,97,0.025) 41px)",
+          "repeating-linear-gradient(135deg, transparent, transparent 40px, color-mix(in srgb, var(--color-gold) 2.5%, transparent) 40px, color-mix(in srgb, var(--color-gold) 2.5%, transparent) 41px)",
         paddingTop: "calc(5rem + 64px)", // 64px = header height
       }}
     >
-      {/* Bottom fade để blend vào section bên dưới */}
-      <div
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-20"
-        style={{
-          background: "linear-gradient(to bottom, transparent, rgba(26,24,21,0.2))",
-        }}
-      />
-
       <Container size="md" className="relative z-10">
         <motion.div
           variants={staggerChildren}
@@ -46,7 +38,7 @@ export function HeroZen({ eyebrow, headline, subline, ctaPrimary }: HeroZenProps
 
           <motion.h1
             variants={fadeInUp}
-            className="font-display text-[length:var(--text-display-md)] text-washi"
+            className="font-display text-[length:var(--text-display-md)] leading-[1.15] text-text-primary"
           >
             {headline}
           </motion.h1>
@@ -54,7 +46,7 @@ export function HeroZen({ eyebrow, headline, subline, ctaPrimary }: HeroZenProps
           {subline && (
             <motion.p
               variants={fadeInUp}
-              className="mx-auto mt-6 max-w-lg text-[length:var(--text-body-lg)] text-washi/70"
+              className="mx-auto mt-6 max-w-lg text-[length:var(--text-body-lg)] text-text-secondary"
             >
               {subline}
             </motion.p>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { cinematicReveal, fadeInUp, staggerChildren } from "@/shared/lib/motion";
+import { cinematicReveal, staggerChildren } from "@/shared/lib/motion";
 import { Button, Container, KanjiAccent, Link, Picture, SectionEyebrow } from "@/shared/ui";
 
 export interface HeroCinematicProps {
@@ -27,7 +27,7 @@ export function HeroCinematic({
   backgroundImageAlt,
 }: HeroCinematicProps) {
   return (
-    <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-sumi-ink text-washi">
+    <section className="relative flex min-h-screen items-end overflow-hidden bg-sumi-ink text-washi">
       {/* Background: photo when available, diagonal texture fallback otherwise */}
       {backgroundImage ? (
         <div className="absolute inset-0 z-0">
@@ -46,19 +46,13 @@ export function HeroCinematic({
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(201,169,97,0.04) 10px, rgba(201,169,97,0.04) 20px)",
+              "repeating-linear-gradient(45deg, transparent, transparent 10px, color-mix(in srgb, var(--color-gold) 4%, transparent) 10px, color-mix(in srgb, var(--color-gold) 4%, transparent) 20px)",
           }}
         />
       )}
 
       {/* Gradient overlay: dark at bottom (text), lightens toward top */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          background:
-            "linear-gradient(to top, rgba(26,24,21,0.95) 0%, rgba(26,24,21,0.5) 55%, rgba(26,24,21,0.25) 100%)",
-        }}
-      />
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-sumi-ink/95 via-sumi-ink/50 to-sumi-ink/25" />
 
       {/* Kanji watermark */}
       {kanjiWatermark && (
@@ -79,14 +73,14 @@ export function HeroCinematic({
           className="max-w-2xl"
         >
           {eyebrow && (
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={cinematicReveal}>
               <SectionEyebrow numeral={eyebrow.numeral} label={eyebrow.label} className="mb-6" />
             </motion.div>
           )}
 
           <motion.h1
             variants={cinematicReveal}
-            className="font-display text-[length:var(--text-display-lg)] leading-tight"
+            className="font-display text-[length:var(--text-display-lg)] leading-[1.1]"
           >
             {headline}
             {headlineItalic && (
@@ -99,7 +93,7 @@ export function HeroCinematic({
 
           {subline && (
             <motion.p
-              variants={fadeInUp}
+              variants={cinematicReveal}
               className="mt-6 text-[length:var(--text-body-lg)] text-washi/80"
             >
               {subline}
@@ -107,7 +101,7 @@ export function HeroCinematic({
           )}
 
           {(ctaPrimary || ctaSecondary) && (
-            <motion.div variants={fadeInUp} className="mt-10 flex flex-wrap gap-4">
+            <motion.div variants={cinematicReveal} className="mt-10 flex flex-wrap gap-4">
               {ctaPrimary && (
                 <Link to={ctaPrimary.href}>
                   <Button size="lg" variant="primary" arrow>

@@ -38,7 +38,7 @@ export function ArticleFilter({ filter, onChange }: ArticleFilterProps) {
             className={cn(
               "rounded-[var(--radius-md)] border px-3 py-1 text-[length:var(--text-body-sm)] transition-colors",
               filter.category === cat.id
-                ? "border-shu-seal bg-shu-seal text-washi"
+                ? "border-shu-seal text-shu-seal"
                 : "border-border text-text-secondary hover:border-text-muted hover:text-text-primary",
             )}
           >

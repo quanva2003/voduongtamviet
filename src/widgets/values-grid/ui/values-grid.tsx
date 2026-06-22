@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import type { Value } from "@/entities/value";
-import { staggerChildren, fadeInUp } from "@/shared/lib/motion";
+import { staggerChildren, cinematicReveal } from "@/shared/lib/motion";
 import { Container, KanjiAccent, SectionEyebrow } from "@/shared/ui";
 
 interface ValuesGridProps {
@@ -35,9 +35,9 @@ export function ValuesGrid({ values, eyebrow, title }: ValuesGridProps) {
           className="grid grid-cols-1 gap-8 md:grid-cols-3"
         >
           {values.map((value) => (
-            <motion.div key={value.id} variants={fadeInUp} className="text-center">
+            <motion.div key={value.id} variants={cinematicReveal} className="text-center">
               <KanjiAccent char={value.kanji} size="lg" color="shu" className="mb-4 block" />
-              <h3 className="font-display text-[length:var(--text-h3)]">{value.title}</h3>
+              <h3 className="font-body text-[length:var(--text-h3)] font-medium">{value.title}</h3>
               <p className="mt-3 text-[length:var(--text-body)] leading-relaxed text-washi/70">
                 {value.description}
               </p>

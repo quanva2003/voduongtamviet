@@ -31,7 +31,7 @@ export function BookingSummary({ booking }: BookingSummaryProps) {
           <p className="text-[length:var(--text-eyebrow)] tracking-[0.15em] text-text-muted uppercase">
             Thông tin đặt lịch
           </p>
-          <h3 className="mt-1 font-display text-[length:var(--text-h3)] text-text-primary">
+          <h3 className="mt-1 font-body text-[length:var(--text-h3)] font-medium text-text-primary">
             {booking.studentName}
           </h3>
         </div>

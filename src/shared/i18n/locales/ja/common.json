@@ -254,7 +254,7 @@
       "contactInfo": "[JA] 連絡先",
       "review": "[JA] 確認"
     },
-    "progress": { "label": "[JA] 予約の進捗" },
+    "progress": { "label": "[JA] 予約の進捗", "current": "[JA] 現在" },
     "ageGroup": {
       "kids": "[JA] 子供",
       "teens": "[JA] 中高生",

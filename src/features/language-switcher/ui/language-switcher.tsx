@@ -44,8 +44,10 @@ export function LanguageSwitcher({ className, onSwitch }: LanguageSwitcherProps)
           onClick={() => void switchLocale(code)}
           aria-pressed={currentLocale === code}
           className={cn(
-            "rounded px-2 py-0.5 text-[length:var(--text-body-sm)] transition-colors",
-            currentLocale === code ? "bg-shu-seal text-washi" : "text-washi/60 hover:text-washi",
+            "rounded border-b px-2 py-0.5 text-[length:var(--text-body-sm)] transition-colors",
+            currentLocale === code
+              ? "border-shu-seal text-washi"
+              : "border-transparent text-washi/60 hover:text-washi",
           )}
         >
           {label}
