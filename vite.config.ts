@@ -6,6 +6,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   root: "src",
+  publicDir: "../public",
   plugins: [
     react(),
     tailwindcss(),
