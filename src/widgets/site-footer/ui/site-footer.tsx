@@ -1,4 +1,4 @@
-import { Container, EnsoCircle, KanjiAccent } from "@/shared/ui";
+import { Container, KanjiAccent } from "@/shared/ui";
 
 import { footerContact, footerNav } from "../model/data";
 
@@ -12,7 +12,7 @@ export function SiteFooter() {
           {/* Logo + tagline */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3">
-              <EnsoCircle size={40} stroke={1.5} variant="brushed" color="var(--color-gold)" />
+              <img src="/logo.svg" alt="" aria-hidden="true" className="h-10 w-10" />
               <span className="font-display text-[length:var(--text-h3)]">Tâm Việt</span>
             </div>
             <p className="mt-3 text-[length:var(--text-body-sm)] text-washi/60">

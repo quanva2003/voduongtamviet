@@ -8,6 +8,7 @@ export { Card, type CardProps } from "./card";
 export { Container, type ContainerProps } from "./container";
 export { Badge, Pill, type BadgeProps } from "./badge";
 export { EnsoCircle, type EnsoCircleProps } from "./enso-circle";
+export { SakuraMotif, type SakuraMotifProps } from "./sakura-motif";
 export { KanjiAccent, type KanjiAccentProps } from "./kanji-accent";
 export { SectionEyebrow, type SectionEyebrowProps } from "./section-eyebrow";
 export { CinematicBlock, type CinematicBlockProps } from "./cinematic-block";

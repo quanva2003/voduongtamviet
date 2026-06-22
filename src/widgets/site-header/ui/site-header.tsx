@@ -75,11 +75,9 @@ export function SiteHeader() {
       <Container size="xl">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link
-            to="/"
-            className="font-display text-[length:var(--text-h3)] text-washi after:hidden"
-          >
-            <span className="font-kanji text-gold">武</span> <span>Tâm Việt</span>
+          <Link to="/" className="flex items-center gap-2 after:hidden">
+            <img src="/logo.svg" alt="" aria-hidden="true" className="h-10 w-10" />
+            <span className="font-display text-[length:var(--text-h3)] text-washi">Tâm Việt</span>
           </Link>
 
           {/* Desktop nav */}
