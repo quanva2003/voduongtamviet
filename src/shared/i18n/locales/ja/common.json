@@ -1,4 +1,7 @@
 {
+  "a11y": {
+    "skipToContent": "[JA] メインコンテンツへスキップ"
+  },
   "nav": {
     "home": "ホーム",
     "about": "道場について",
@@ -45,6 +48,7 @@
       ]
     },
     "benefits": { "eyebrow": "[JA] 核心的価値", "title": "[JA] 三つの根本的価値" },
+    "philosophy": { "quote": "[JA] 規律が自由を生む。", "quoteItalic": "[JA] 静寂が力を抱く。" },
     "instructors": { "eyebrow": "[JA] 指導員", "title": "[JA] 指導員チーム" },
     "articles": { "eyebrow": "[JA] 記事", "title": "[JA] 武道の知識" },
     "cta": {
@@ -121,6 +125,11 @@
       "headline": "[JA] ご質問はありますか？",
       "paragraph": "[JA] 直接ご連絡いただくか、最寄りの道場へお越しください。",
       "cta": "[JA] 稽古予定を見る"
+    },
+    "sections": {
+      "formTitle": "[JA] 申込情報",
+      "locationsTitle": "[JA] 道場の場所",
+      "courseTitle": "[JA] コース情報"
     },
     "form": {
       "ariaLabel": "[JA] 入門申込フォーム",
@@ -246,6 +255,10 @@
   },
   "booking": {
     "title": "[JA] 稽古を予約",
+    "hero": {
+      "eyebrow": "[JA] 体験予約",
+      "headline": "[JA] 体験稽古を予約する"
+    },
     "confirm": "[JA] 予約を確定",
     "confirming": "[JA] 処理中...",
     "steps": {

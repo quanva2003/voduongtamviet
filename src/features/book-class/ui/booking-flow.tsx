@@ -44,9 +44,9 @@ export function BookingFlow() {
   return (
     <div>
       <Container size="xl">
-        <h1 className="pt-8 font-display text-[length:var(--text-h1)] text-text-primary">
+        <h2 className="pt-8 font-display text-[length:var(--text-h1)] text-text-primary">
           {t("booking.title")}
-        </h1>
+        </h2>
         <BookingProgress step={step} />
       </Container>
 

@@ -113,7 +113,7 @@ export function Component() {
         headline={t("schedule.cta.headline")}
         paragraph={t("schedule.cta.paragraph")}
         cta={{ label: t("schedule.cta.cta"), href: "/booking" }}
-        variant="cinematic"
+        variant="zen"
         kanjiWatermark="道"
       />
     </>

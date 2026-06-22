@@ -4,7 +4,7 @@ import { locations } from "@/entities/location";
 import { RegistrationForm } from "@/features/registration-form";
 import { SeoMeta } from "@/features/seo-meta";
 import type { Locale } from "@/shared/i18n";
-import { Container } from "@/shared/ui";
+import { Container, SectionEyebrow } from "@/shared/ui";
 import { CourseInfo, courseInfoData } from "@/widgets/course-info";
 import { CtaSection } from "@/widgets/cta-section";
 import { HeroZen } from "@/widgets/hero-zen";
@@ -33,25 +33,32 @@ export function Component() {
       />
 
       <section className="bg-washi py-[var(--space-24)]">
-        <Container size="2xl">
-          <div className="grid grid-cols-1 gap-16 lg:grid-cols-[3fr_2fr]">
-            <div>
-              <RegistrationForm />
-            </div>
-            <aside className="flex flex-col gap-12">
-              <LocationsMap locations={localeLocations} />
-            </aside>
-          </div>
+        <Container size="md">
+          <SectionEyebrow numeral="一" label={t("registration.sections.formTitle")} className="mb-3" />
+          <h2 className="mb-10 font-display text-[length:var(--text-h2)] text-text-primary">
+            {t("registration.sections.formTitle")}
+          </h2>
+          <RegistrationForm />
         </Container>
       </section>
 
-      <CourseInfo items={courseItems} />
+      <LocationsMap
+        locations={localeLocations}
+        eyebrow={{ numeral: "二", label: t("registration.sections.locationsTitle") }}
+        title={t("registration.sections.locationsTitle")}
+      />
+
+      <CourseInfo
+        items={courseItems}
+        eyebrow={{ numeral: "三", label: t("registration.sections.courseTitle") }}
+        title={t("registration.sections.courseTitle")}
+      />
 
       <CtaSection
         headline={t("registration.cta.headline")}
         paragraph={t("registration.cta.paragraph")}
         cta={{ label: t("registration.cta.cta"), href: "/schedule" }}
-        variant="cinematic"
+        variant="zen"
         kanjiWatermark="心"
       />
     </>

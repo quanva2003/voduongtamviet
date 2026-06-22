@@ -5,6 +5,7 @@ import { instructors } from "@/entities/instructor";
 import { values } from "@/entities/value";
 import { localBusinessJsonLd, SeoMeta } from "@/features/seo-meta";
 import type { Locale } from "@/shared/i18n";
+import { CinematicBlock, Container, SakuraMotif } from "@/shared/ui";
 import { ArticlesGrid } from "@/widgets/articles-grid";
 import { BenefitsGrid } from "@/widgets/benefits-grid";
 import { CtaSection } from "@/widgets/cta-section";
@@ -47,6 +48,15 @@ export function Component() {
         eyebrow={{ numeral: "三", label: t("home.benefits.eyebrow") }}
         title={t("home.benefits.title")}
       />
+      <CinematicBlock kanjiWatermark="心">
+        <Container size="md" className="flex flex-col items-center text-center">
+          <SakuraMotif size={48} className="mb-8" />
+          <p className="font-display text-[length:var(--text-display-md)] leading-[1.15]">
+            {t("home.philosophy.quote")}{" "}
+            <em className="text-gold italic">{t("home.philosophy.quoteItalic")}</em>
+          </p>
+        </Container>
+      </CinematicBlock>
       <InstructorsList
         instructors={localeInstructors}
         variant="preview"

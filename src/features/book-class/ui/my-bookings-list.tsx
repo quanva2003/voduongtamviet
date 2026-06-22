@@ -54,9 +54,9 @@ export function MyBookingsList() {
 
   return (
     <Container size="md" className="py-10">
-      <h1 className="mb-8 font-display text-[length:var(--text-h1)] text-text-primary">
+      <h2 className="mb-8 font-display text-[length:var(--text-h1)] text-text-primary">
         {t("booking.myBookings.title")}
-      </h1>
+      </h2>
       <div className="flex flex-col gap-4">
         {bookings.map((b) => {
           const schedule = classSchedules.find((s) => s.id === b.scheduleId);

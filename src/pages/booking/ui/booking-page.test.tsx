@@ -37,7 +37,7 @@ function Wrapper({ search = "" }: { search?: string }) {
 describe("BookingPage", () => {
   it("renders booking flow by default", () => {
     render(<Wrapper />);
-    expect(screen.getByText(/đặt lịch học/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 2, name: "Đặt lịch học" })).toBeInTheDocument();
   });
 
   it("renders my bookings list when ?my=true", () => {

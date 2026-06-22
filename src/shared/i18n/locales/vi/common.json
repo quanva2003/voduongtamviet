@@ -1,4 +1,7 @@
 {
+  "a11y": {
+    "skipToContent": "Bỏ qua, đến nội dung chính"
+  },
   "nav": {
     "home": "Trang chủ",
     "about": "Giới thiệu",
@@ -47,6 +50,10 @@
     "benefits": {
       "eyebrow": "GIÁ TRỊ CỐT LÕI",
       "title": "Ba giá trị nền tảng"
+    },
+    "philosophy": {
+      "quote": "Kỷ luật tạo ra tự do.",
+      "quoteItalic": "Tĩnh lặng chứa đựng sức mạnh."
     },
     "instructors": {
       "eyebrow": "HUẤN LUYỆN VIÊN",
@@ -140,6 +147,11 @@
       "headline": "Còn thắc mắc?",
       "paragraph": "Liên hệ trực tiếp với chúng tôi qua hotline hoặc ghé thăm cơ sở gần nhất.",
       "cta": "Xem lịch học"
+    },
+    "sections": {
+      "formTitle": "Thông tin đăng ký",
+      "locationsTitle": "Cơ sở võ đường",
+      "courseTitle": "Thông tin khóa học"
     },
     "form": {
       "ariaLabel": "Biểu mẫu đăng ký học",
@@ -271,6 +283,10 @@
   },
   "booking": {
     "title": "Đặt lịch học",
+    "hero": {
+      "eyebrow": "ĐẶT LỊCH HỌC THỬ",
+      "headline": "Đặt lịch học thử"
+    },
     "confirm": "Xác nhận đặt lịch",
     "confirming": "Đang xử lý...",
     "steps": {

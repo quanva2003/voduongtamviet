@@ -22,6 +22,9 @@ export function SiteLayout({ locale }: Props) {
 
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        {i18n.t("a11y.skipToContent")}
+      </a>
       <SiteHeader />
       <main
         id="main-content"

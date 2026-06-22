@@ -59,7 +59,10 @@ export function Component() {
             className="flex flex-col gap-8"
           >
             <motion.div variants={fadeInUp}>
-              <SectionEyebrow numeral="一" label="THÔNG TIN" className="mb-6" />
+              <SectionEyebrow numeral="一" label="THÔNG TIN" className="mb-3" />
+              <h2 className="mb-6 font-display text-[length:var(--text-h2)] text-text-primary">
+                Thông tin sự kiện
+              </h2>
               <Card variant="zen" padding="md">
                 <dl className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
@@ -88,7 +91,7 @@ export function Component() {
                     <dt className="text-[length:var(--text-eyebrow)] tracking-[0.15em] text-text-muted uppercase">
                       {t("beltPromotion.detail.fee")}
                     </dt>
-                    <dd className="mt-1 font-display text-[length:var(--text-h3)] text-shu-seal">
+                    <dd className="mt-1 font-display text-[length:var(--text-h3)] text-text-primary">
                       {new Intl.NumberFormat("vi-VN", {
                         style: "currency",
                         currency: "VND",
@@ -109,8 +112,11 @@ export function Component() {
               <SectionEyebrow
                 numeral="二"
                 label={t("beltPromotion.detail.requirements")}
-                className="mb-4"
+                className="mb-3"
               />
+              <h2 className="mb-4 font-display text-[length:var(--text-h2)] text-text-primary">
+                {t("beltPromotion.detail.requirements")}
+              </h2>
               <ul className="flex flex-col gap-2">
                 {event.requirements.map((req, i) => (
                   <li

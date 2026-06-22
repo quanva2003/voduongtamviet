@@ -1,4 +1,7 @@
 {
+  "a11y": {
+    "skipToContent": "[EN] Skip to main content"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -47,6 +50,10 @@
     "benefits": {
       "eyebrow": "[EN] CORE VALUES",
       "title": "[EN] Three foundational values"
+    },
+    "philosophy": {
+      "quote": "[EN] Discipline creates freedom.",
+      "quoteItalic": "[EN] Stillness holds strength."
     },
     "instructors": {
       "eyebrow": "[EN] INSTRUCTORS",
@@ -134,6 +141,11 @@
       "headline": "[EN] Have questions?",
       "paragraph": "[EN] Contact us directly or visit the nearest location.",
       "cta": "[EN] View schedule"
+    },
+    "sections": {
+      "formTitle": "[EN] Registration details",
+      "locationsTitle": "[EN] Dojo locations",
+      "courseTitle": "[EN] Course information"
     },
     "form": {
       "ariaLabel": "[EN] Registration form",
@@ -259,6 +271,10 @@
   },
   "booking": {
     "title": "[EN] Book a class",
+    "hero": {
+      "eyebrow": "[EN] BOOK A TRIAL CLASS",
+      "headline": "[EN] Book a trial class"
+    },
     "confirm": "[EN] Confirm booking",
     "confirming": "[EN] Processing...",
     "steps": {

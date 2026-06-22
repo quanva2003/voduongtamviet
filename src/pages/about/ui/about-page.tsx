@@ -58,7 +58,7 @@ export function Component() {
         headline={t("about.cta.headline")}
         paragraph={t("about.cta.paragraph")}
         cta={{ label: t("about.cta.cta"), href: "/registration" }}
-        variant="cinematic"
+        variant="zen"
         kanjiWatermark="武"
       />
     </>

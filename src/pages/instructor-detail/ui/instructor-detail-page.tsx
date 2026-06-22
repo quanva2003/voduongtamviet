@@ -50,6 +50,7 @@ export function Component() {
           locationNames={locationMap}
           instructorNames={instructorMap}
           eyebrow={{ numeral: "師", label: t("instructorDetail.classes") }}
+          title={t("instructorDetail.classes")}
         />
       )}
 
