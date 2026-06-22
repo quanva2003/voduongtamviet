@@ -25,12 +25,18 @@ Tất cả color khai báo trong CSS variables, auto-adapt light/dark theo `pref
 
 ### 2.1 Base palette
 
+> Sprint 6 (2026-06-22): đỏ Shu nâng lên tông vermillion lấy từ `public/logo.svg` (hex gốc trích
+> từ logo: `#ff1810`). `--color-shu-seal` được điều chỉnh nhẹ để giữ AA contrast 4.5:1 khi mang
+> text (button, link, focus ring); `--color-sakura` giữ đúng hex vermillion thuần của logo, dùng
+> riêng cho chi tiết decorative (motif hoa sakura, watermark, viền mỏng) không cần qua AA.
+
 | Token                    | Light hex | Dark hex  | Dùng cho                         |
 | ------------------------ | --------- | --------- | -------------------------------- |
 | `--color-washi`          | `#faf7f0` | `#1a1815` | Background mặc định              |
 | `--color-sumi-paper`     | `#f0ead8` | `#252220` | Background section nhấn nhẹ      |
 | `--color-sumi-ink`       | `#1a1815` | `#faf7f0` | Cinematic block bg / text invert |
-| `--color-shu-seal`       | `#8b1a14` | `#c43d36` | Đỏ ấn triện — accent chính       |
+| `--color-shu-seal`       | `#d4200d` | `#ea5347` | Đỏ ấn triện — accent chính mang text |
+| `--color-sakura`         | `#ff1810` | `#ff4d3f` | Vermillion thuần từ logo — chỉ decorative |
 | `--color-gold`           | `#c9a961` | `#d4b876` | Vàng decorative — eyebrow, kanji |
 | `--color-text-primary`   | `#2a2620` | `#f0ead8` | Text body                        |
 | `--color-text-secondary` | `#6b6457` | `#a8a194` | Text phụ                         |
@@ -38,9 +44,9 @@ Tất cả color khai báo trong CSS variables, auto-adapt light/dark theo `pref
 | `--color-border`         | `#d4cdb8` | `#3a352e` | Border mặc định 0.5px            |
 | `--color-border-strong`  | `#a8a194` | `#5a5347` | Border emphasis                  |
 
-### 2.2 Quy tắc dùng đỏ Shu
+### 2.2 Quy tắc dùng đỏ Shu / vermillion
 
-Chỉ dùng đỏ `--color-shu-seal` ở:
+Chỉ dùng `--color-shu-seal` (mang text, AA-safe) ở:
 
 - Accent letter trong logo (dấu chấm/nét cuối)
 - Hán tự decorative ở section header
@@ -48,14 +54,19 @@ Chỉ dùng đỏ `--color-shu-seal` ở:
 - Hover state của primary button
 - Border trái của blockquote/featured card
 
-**Không dùng** cho: button bg lớn, background section, text body, border thường.
+Chỉ dùng `--color-sakura` (vermillion thuần, không qua AA) ở:
+
+- Motif hoa sakura 5 cánh làm divider giữa section hoặc watermark
+- Viền mỏng / underline decorative thuần trang trí, không chứa text
+
+**Không dùng** cho cả hai: button bg lớn, background section, text body, border thường.
 
 ### 2.3 Semantic colors
 
 | Token             | Hex       | Use                |
 | ----------------- | --------- | ------------------ |
 | `--color-success` | `#5a7548` | Form success       |
-| `--color-danger`  | `#8b1a14` | Form error (= shu) |
+| `--color-danger`  | `#d4200d` | Form error (= shu) |
 | `--color-warning` | `#b8843d` | Notice             |
 | `--color-info`    | `#4a6478` | Info banner        |
 

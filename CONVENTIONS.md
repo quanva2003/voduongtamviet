@@ -202,6 +202,11 @@ Rules cứng:
 <CinematicBlock>...</CinematicBlock>   // ❌ Hai cinematic liền nhau
 ```
 
+**Sakura motif (sprint 6, lấy từ `public/logo.svg`)** — hoa sakura 5 cánh dùng làm divider giữa
+zen section, màu `--color-sakura` (vermillion thuần, không phải `--color-shu-seal`). Chỉ dùng
+decorative (không chứa text), size nhỏ (40–64px), opacity 0.85–1, không lặp lại quá 1 lần/page
+ngoài watermark mờ. Không thay thế kanji watermark — hai motif tồn tại song song, không trộn lẫn.
+
 ---
 
 ## 9. Accessibility

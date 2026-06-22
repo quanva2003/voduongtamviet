@@ -11,7 +11,8 @@
   --color-washi: #faf7f0;
   --color-sumi-paper: #f0ead8;
   --color-sumi-ink: #1a1815;
-  --color-shu-seal: #8b1a14;
+  --color-shu-seal: #d4200d;
+  --color-sakura: #ff1810;
   --color-gold: #c9a961;
   --color-text-primary: #2a2620;
   --color-text-secondary: #6b6457;
@@ -21,7 +22,7 @@
 
   /* Semantic */
   --color-success: #5a7548;
-  --color-danger: #8b1a14;
+  --color-danger: #d4200d;
   --color-warning: #b8843d;
   --color-info: #4a6478;
 
@@ -79,7 +80,8 @@
     --color-washi: #1a1815;
     --color-sumi-paper: #252220;
     --color-sumi-ink: #faf7f0;
-    --color-shu-seal: #c43d36;
+    --color-shu-seal: #ea5347;
+    --color-sakura: #ff4d3f;
     --color-gold: #d4b876;
     --color-text-primary: #f0ead8;
     --color-text-secondary: #a8a194;
@@ -98,6 +100,7 @@
   --color-sumi-paper: var(--color-sumi-paper);
   --color-sumi-ink: var(--color-sumi-ink);
   --color-shu-seal: var(--color-shu-seal);
+  --color-sakura: var(--color-sakura);
   --color-gold: var(--color-gold);
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
