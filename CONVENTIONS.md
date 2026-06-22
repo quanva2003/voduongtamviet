@@ -169,7 +169,7 @@ Rules cứng:
 ### Button
 
 ```typescript
-// Primary: sumi-ink → hover shu-seal, kết bằng →
+// Primary: shu-seal (vermillion) → hover sumi-ink, kết bằng → (sprint 6: đổi từ sumi-ink mặc định)
 <Button variant="primary">Đăng ký ngay →</Button>
 
 // Secondary: transparent + border-strong

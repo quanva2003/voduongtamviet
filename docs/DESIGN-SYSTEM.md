@@ -46,12 +46,12 @@ Tất cả color khai báo trong CSS variables, auto-adapt light/dark theo `pref
 
 ### 2.2 Quy tắc dùng đỏ Shu / vermillion
 
-Chỉ dùng `--color-shu-seal` (mang text, AA-safe) ở:
+Dùng `--color-shu-seal` (mang text, AA-safe) ở:
 
+- **Nền primary button** (sprint 6: mặc định, không chỉ hover — hover chuyển sang sumi-ink)
 - Accent letter trong logo (dấu chấm/nét cuối)
 - Hán tự decorative ở section header
 - Active state của navigation
-- Hover state của primary button
 - Border trái của blockquote/featured card
 
 Chỉ dùng `--color-sakura` (vermillion thuần, không qua AA) ở:
@@ -227,7 +227,7 @@ export const staggerChildren = {
 
 3 variants:
 
-- `primary` — bg `--color-sumi-ink`, text `--color-washi`, hover bg `--color-shu-seal`
+- `primary` — bg `--color-shu-seal`, text `--color-washi`, hover bg `--color-sumi-ink` (sprint 6)
 - `secondary` — bg transparent, border `--color-border-strong`, text primary
 - `ghost` — không border, underline khi hover
 
